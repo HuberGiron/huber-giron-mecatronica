@@ -215,7 +215,7 @@
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/ICEV63254.2024.10766030",
-    "habilitado": false
+    "habilitado": true
   },
   {
     "id": "pub-unicycle-qr",
