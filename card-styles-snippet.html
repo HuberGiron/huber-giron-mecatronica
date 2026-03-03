@@ -6,7 +6,7 @@
         }
 
         .dynamic-card-media {
-            height: 220px;
+            height: 176px;
             overflow: hidden;
             background: #f4f4f4;
         }
@@ -21,34 +21,43 @@
         .dynamic-content-card .card-body {
             display: flex;
             flex-direction: column;
-            min-height: 245px;
+            min-height: 230px;
         }
 
         .dynamic-card-badges {
-            min-height: 3.4rem;
-            max-height: 3.4rem;
+            min-height: 2.65rem;
+            max-height: 2.65rem;
             overflow: hidden;
+            margin-bottom: 0.2rem;
+        }
+
+        .dynamic-card-badges .badge {
+            margin-bottom: 0.2rem !important;
         }
 
         .dynamic-card-title {
-            min-height: 3.2rem;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            line-height: 1.6rem;
-        }
-
-        .dynamic-card-text {
-            min-height: 4.8rem;
-            margin-bottom: 0;
+            min-height: 4.05rem;
+            margin-top: 0.35rem;
+            margin-bottom: 0.35rem;
+            font-size: 1.02rem;
+            font-weight: 700;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            line-height: 1.6rem;
+            line-height: 1.35rem;
+        }
+
+        .dynamic-card-text {
+            min-height: 4.05rem;
+            margin-bottom: 0;
+            font-size: 0.93rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.35rem;
+            color: #5c636a;
         }
 
         .dynamic-content-card .card-footer {
@@ -63,7 +72,7 @@
 
         @media (max-width: 991.98px) {
             .dynamic-card-media {
-                height: 240px;
+                height: 168px;
             }
 
             .dynamic-content-card .card-body {

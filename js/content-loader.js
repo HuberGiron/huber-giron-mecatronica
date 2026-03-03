@@ -38,7 +38,7 @@ function escapeHtml(texto = "") {
 
 function buildBadges(categorias = []) {
   return categorias
-    .map(cat => `<span class="badge bg-primary bg-gradient rounded-pill mb-2">${escapeHtml(cat)}</span>`)
+    .map(cat => `<span class="badge bg-primary bg-gradient rounded-pill mb-1">${escapeHtml(cat)}</span>`)
     .join("\n");
 }
 
@@ -60,7 +60,7 @@ function buildCard(item) {
           <div class="dynamic-card-badges">
             ${buildBadges(item.categorias)}
           </div>
-          <h5 class="card-title dynamic-card-title">${escapeHtml(item.titulo)}</h5>
+          <h5 class="card-title dynamic-card-title mb-0">${escapeHtml(item.titulo)}</h5>
           <p class="card-text dynamic-card-text">${escapeHtml(item.descripcion)}</p>
         </div>
         <div class="d-grid py-4 px-4 mt-auto">
