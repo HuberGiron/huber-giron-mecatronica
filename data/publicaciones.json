@@ -156,7 +156,7 @@
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/enc68268.2025.11311940",
-    "habilitado": false
+    "habilitado": true
   },
   {
     "id": "pub-smart-polymeric-materials",
