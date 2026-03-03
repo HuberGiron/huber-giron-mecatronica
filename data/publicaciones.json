@@ -337,26 +337,6 @@
     "habilitado": false
   },
   {
-    "id": "pub-mecanum-redesign-2023",
-    "titulo": "Rediseño de ruedas mecanum para su uso en una plataforma vehicular autónoma considerando materiales adecuados, resistencia, desempeño y capacidad de movimiento evaluando su ...",
-    "descripcion": "Trabajo sobre rediseño de ruedas mecanum para plataformas vehiculares autónomas considerando materiales, resistencia y desempeño.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Trabajo sobre rediseño de ruedas mecanum para plataforma autónoma",
-    "categorias": [
-      "2023",
-      "Robótica móvil",
-      "Diseño mecánico"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2023-10-04",
-    "fechaTexto": "2023",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
-  },
-  {
     "id": "pub-softrobot-tridigital-2023",
     "titulo": "Prototipo de softrobot que simula la sujeción tridigital de la mano humana a partir de actuadores de tensión lineal.",
     "descripcion": "Prototipo de softrobot inspirado en la mano humana para simular una sujeción tridigital mediante actuadores de tensión lineal.",
