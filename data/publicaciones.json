@@ -419,7 +419,7 @@
     "id": "pub-elderly-assistance-vision-2023-repo",
     "titulo": "Desarrollo de un prototipo de robot móvil autónomo con navegación basada en visión por computadora para la asistencia de adultos mayores dentro de entornos controlados",
     "descripcion": "Versión en repositorio institucional del prototipo de robot móvil autónomo con navegación por visión para asistencia de adultos mayores.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/cajas.png",
     "alt": "Repositorio IBERO Puebla sobre robot móvil autónomo para asistencia de adultos mayores",
     "categorias": [
       "Repositorio IBERO Puebla",
@@ -438,7 +438,7 @@
     "id": "pub-payload-robot-2023-repo",
     "titulo": "Desarrollo de un prototipo de robot móvil autónomo con capacidad de desplazamiento y transporte de paquetes.",
     "descripcion": "Versión en repositorio institucional del prototipo de robot móvil autónomo para transporte de paquetes.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/mecanum2.png",
     "alt": "Repositorio IBERO Puebla sobre robot móvil para transporte de paquetes",
     "categorias": [
       "Repositorio IBERO Puebla",
@@ -473,29 +473,10 @@
     "habilitado": true
   },
   {
-    "id": "pub-robbie-2023-repo",
-    "titulo": "ROBBIE – Robot auxiliar de tipo SCARA controlado por voz para la alimentación y limpieza facial de pacientes que padezcan enfermedades del sistema neuromusculoesquelético del ...",
-    "descripcion": "Versión en repositorio institucional del robot auxiliar tipo SCARA controlado por voz para asistencia en alimentación y limpieza facial.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Repositorio IBERO Puebla sobre robot auxiliar SCARA controlado por voz",
-    "categorias": [
-      "Repositorio IBERO Puebla",
-      "Trabajo recepcional"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2023-08-12",
-    "fechaTexto": "2023",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "https://repositorio.iberopuebla.mx/handle/20.500.11777/5690",
-    "habilitado": true
-  },
-  {
     "id": "pub-ecg-ad8232-2022",
     "titulo": "Desarrollo de un código en un software matemático para el análisis y verificación de funcionamiento de un prototipo de un electrocardiógrafo con un sensor comercial AD8232",
     "descripcion": "Trabajo orientado al análisis y verificación de un prototipo de electrocardiógrafo basado en el sensor comercial AD8232 mediante software matemático.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/electro.png",
     "alt": "Trabajo sobre análisis de electrocardiógrafo con sensor AD8232",
     "categorias": [
       "Repositorio IBERO Puebla",
@@ -514,7 +495,7 @@
     "id": "pub-cmos-ldo-2020",
     "titulo": "A 0.18 μm CMOS capacitor-less low-drop out voltage regulator compensated via the bootstrap flipped-voltage follower",
     "descripcion": "Artículo sobre un regulador LDO capacitor-less en tecnología CMOS de 0.18 μm compensado mediante bootstrap flipped-voltage follower.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/cmos.png",
     "alt": "Artículo 2020 sobre regulador LDO capacitor-less en CMOS 0.18 μm",
     "categorias": [
       "2020",
@@ -527,7 +508,7 @@
     "fechaTexto": "2020",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
-    "url": "",
+    "url": "https://doi.org/10.1016/j.mejo.2020.104809",
     "habilitado": true
   }
 ]
