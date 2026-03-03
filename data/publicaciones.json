@@ -327,20 +327,20 @@
       "ICEV 2023",
       "Conference Paper"
     ],
-    "autor": "Dr. Huber Girón Nieto",
+    "autor": "*Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
     "fechaISO": "2023-10-12",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/ICEV59168.2023.10329674",
-    "habilitado": false
+    "habilitado": true
   },
   {
     "id": "pub-softrobot-tridigital-2023",
     "titulo": "Prototipo de softrobot que simula la sujeción tridigital de la mano humana a partir de actuadores de tensión lineal.",
     "descripcion": "Prototipo de softrobot inspirado en la mano humana para simular una sujeción tridigital mediante actuadores de tensión lineal.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/soft.png",
     "alt": "Trabajo sobre prototipo de softrobot con sujeción tridigital",
     "categorias": [
       "2023",
@@ -353,14 +353,14 @@
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
+    "url": "https://hdl.handle.net/20.500.11777/5922",
+    "habilitado": true
   },
   {
     "id": "pub-robbie-2023",
-    "titulo": "ROBBIE–Robot auxiliar de tipo SCARA controlado por voz para la alimentación y limpieza facial de pacientes que padezcan enfermedades del sistema neuromusculoesquelético del ...",
+    "titulo": "ROBBIE–Robot auxiliar de tipo SCARA",
     "descripcion": "Robot auxiliar tipo SCARA controlado por voz para apoyar tareas de alimentación y limpieza facial de pacientes con padecimientos neuromusculoesqueléticos.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/scara.png",
     "alt": "Trabajo sobre robot auxiliar SCARA controlado por voz",
     "categorias": [
       "2023",
@@ -373,14 +373,14 @@
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
+    "url": "https://hdl.handle.net/20.500.11777/5690",
+    "habilitado": true
   },
   {
     "id": "pub-tomato-virus-detection-2023",
     "titulo": "Diseño de un sistema de detección temprana para el virus del mosaico del tomate en cultivos de tomates (Solanum Lycopersicum)",
     "descripcion": "Sistema de detección temprana para identificar el virus del mosaico del tomate en cultivos de Solanum Lycopersicum.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/jitomate.png",
     "alt": "Trabajo sobre detección temprana del virus del mosaico del tomate",
     "categorias": [
       "2023",
@@ -393,14 +393,14 @@
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
+    "url": "https://hdl.handle.net/20.500.11777/5914",
+    "habilitado": true
   },
   {
     "id": "pub-mecanum-redesign-2023-repo",
     "titulo": "Rediseño de ruedas mecanum para su uso en una plataforma vehicular autónoma considerando materiales adecuados, resistencia, desempeño y capacidad de movimiento evaluando su ...",
     "descripcion": "Versión en repositorio institucional del trabajo de rediseño de ruedas mecanum para una plataforma vehicular autónoma.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/mecanum.png",
     "alt": "Repositorio IBERO Puebla sobre rediseño de ruedas mecanum",
     "categorias": [
       "Repositorio IBERO Puebla",
@@ -528,6 +528,6 @@
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "",
-    "habilitado": false
+    "habilitado": true
   }
 ]
