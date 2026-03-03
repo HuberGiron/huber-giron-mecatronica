@@ -1,0 +1,59 @@
+[
+  {
+    "id": "pub-multi-robot-delays",
+    "titulo": "Cyber-Physical Multi-Robot Formation with a Communication Delays and a Virtual Agent Approach",
+    "descripcion": "Artículo enfocado en formación multi-robot en entornos ciberfísicos, comunicación con retardos y enfoque mediante agentes virtuales.",
+    "imagen": "assets/mdpi1.png",
+    "alt": "Artículo publicado en MDPI",
+    "categorias": [
+      "MDPI",
+      "Open Access"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-05-02",
+    "fechaTexto": "2 de Mayo 2025",
+    "tipoEtiqueta": "Publicación",
+    "botonTexto": "Leer más",
+    "url": "https://www.mdpi.com/2079-9292/14/9/1869",
+    "habilitado": true
+  },
+  {
+    "id": "pub-wheelchair-dogs",
+    "titulo": "3D-Printed Front Limb Wheelchair for Medium-Sized Dogs with Mobility Disabilities",
+    "descripcion": "Desarrollo de un dispositivo asistivo veterinario impreso en 3D, diseñado para mejorar la movilidad, estabilidad y confort de un perro con discapacidad motriz en las extremidades frontales.",
+    "imagen": "assets/kangu.jpeg",
+    "alt": "Publicación en IEEE Xplore 11086475",
+    "categorias": [
+      "IEEE",
+      "Conference Paper"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-07-28",
+    "fechaTexto": "28 Julio 2025",
+    "tipoEtiqueta": "Publicación",
+    "botonTexto": "Leer más",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11086475",
+    "habilitado": true
+  },
+  {
+    "id": "pub-seizure-sensor",
+    "titulo": "Development of a Portable IoT-Based Sensor for Seizure Motion Detection and Real-Time WiFi Alert Transmission",
+    "descripcion": "Sistema wearable inteligente para detección de convulsiones, con clasificación de movimiento, monitoreo continuo y comunicación de alertas en tiempo real.",
+    "imagen": "assets/epilepsia.jpg",
+    "alt": "Publicación en IEEE Xplore 11086440",
+    "categorias": [
+      "IEEE",
+      "Conference Paper"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-07-28",
+    "fechaTexto": "28 Julio 2025",
+    "tipoEtiqueta": "Publicación",
+    "botonTexto": "Leer más",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11086440",
+    "habilitado": true
+  }
+]

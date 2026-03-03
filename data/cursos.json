@@ -1,0 +1,59 @@
+[
+  {
+    "id": "curso-cps-lab",
+    "titulo": "Sistemas Ciberfísicos y Laboratorio",
+    "descripcion": "Curso orientado a la integración de sensores, actuadores, comunicación, control, sistemas embebidos y validación experimental en plataformas conectadas.",
+    "imagen": "assets/web.jpg",
+    "alt": "Curso de Sistemas Ciberfísicos y Laboratorio",
+    "categorias": [
+      "CPS",
+      "Laboratorio"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-08-01",
+    "fechaTexto": "Otoño 2025 · Curso",
+    "tipoEtiqueta": "Curso",
+    "botonTexto": "Próximamente",
+    "url": "",
+    "habilitado": false
+  },
+  {
+    "id": "curso-pensamiento-ingenieria",
+    "titulo": "Pensamiento de Ingeniería",
+    "descripcion": "Espacio formativo centrado en el análisis de problemas, generación de soluciones, creatividad, prototipado y desarrollo de proyectos con enfoque interdisciplinario.",
+    "imagen": "assets/web.jpg",
+    "alt": "Curso de Pensamiento de Ingeniería",
+    "categorias": [
+      "Ingeniería",
+      "Proyectos"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-01-15",
+    "fechaTexto": "Primavera 2025 · Curso",
+    "tipoEtiqueta": "Curso",
+    "botonTexto": "Próximamente",
+    "url": "",
+    "habilitado": false
+  },
+  {
+    "id": "curso-proyecto-terminal",
+    "titulo": "Proyecto Terminal de Ingeniería",
+    "descripcion": "Acompañamiento para el diseño, integración, documentación y validación de proyectos terminales con énfasis en solución de problemas y desarrollo tecnológico.",
+    "imagen": "assets/web.jpg",
+    "alt": "Curso de Proyecto Terminal de Ingeniería",
+    "categorias": [
+      "Integración",
+      "Innovación"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2024-08-01",
+    "fechaTexto": "Otoño 2024 · Curso",
+    "tipoEtiqueta": "Curso",
+    "botonTexto": "Próximamente",
+    "url": "",
+    "habilitado": false
+  }
+]

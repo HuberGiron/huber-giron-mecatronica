@@ -1,0 +1,59 @@
+[
+  {
+    "id": "proyecto-dxf",
+    "titulo": "Herramienta web para DXF",
+    "descripcion": "Proyecto orientado a la visualización y trabajo con archivos DXF para apoyar procesos de diseño, documentación técnica y preparación de piezas para fabricación digital.",
+    "imagen": "assets/dxf.png",
+    "alt": "Herramienta web para DXF",
+    "categorias": [
+      "DXF",
+      "Fabricación digital"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-06-15",
+    "fechaTexto": "2025 · Proyecto",
+    "tipoEtiqueta": "Proyecto",
+    "botonTexto": "Leer más",
+    "url": "https://mecatronica-ibero.mx/dxf/",
+    "habilitado": true
+  },
+  {
+    "id": "proyecto-stl",
+    "titulo": "Herramienta web para STL",
+    "descripcion": "Aplicación enfocada en el trabajo con modelos STL para visualización, exploración y apoyo a flujos de prototipado, manufactura digital y documentación de diseño.",
+    "imagen": "assets/stl.png",
+    "alt": "Herramienta web para STL",
+    "categorias": [
+      "STL",
+      "3D"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-06-10",
+    "fechaTexto": "2025 · Proyecto",
+    "tipoEtiqueta": "Proyecto",
+    "botonTexto": "Leer más",
+    "url": "https://mecatronica-ibero.mx/stl/",
+    "habilitado": true
+  },
+  {
+    "id": "proyecto-teachable",
+    "titulo": "Plataforma educativa Teachable",
+    "descripcion": "Entorno digital para visualizar y probar modelos de Teachable Machine.",
+    "imagen": "assets/teachable.png",
+    "alt": "Plataforma educativa Teachable",
+    "categorias": [
+      "Educación",
+      "Plataforma"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-05-01",
+    "fechaTexto": "2025 · Proyecto",
+    "tipoEtiqueta": "Proyecto",
+    "botonTexto": "Leer más",
+    "url": "https://mecatronica-ibero.mx/teachable/",
+    "habilitado": true
+  }
+]
