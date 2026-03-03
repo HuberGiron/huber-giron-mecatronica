@@ -52,14 +52,18 @@ function buildActionButton(item) {
 function buildCard(item) {
   return `
     <div class="col-lg-4 mb-5">
-      <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="${escapeHtml(item.imagen)}" alt="${escapeHtml(item.alt || item.titulo)}">
-        <div class="card-body px-4">
-          ${buildBadges(item.categorias)}
-          <h5 class="card-title mt-3 mb-1">${escapeHtml(item.titulo)}</h5>
-          <p class="card-text mb-0">${escapeHtml(item.descripcion)}</p>
+      <div class="card dynamic-content-card shadow border-0">
+        <div class="dynamic-card-media">
+          <img class="card-img-top" src="${escapeHtml(item.imagen)}" alt="${escapeHtml(item.alt || item.titulo)}">
         </div>
-        <div class="d-grid py-4 px-4">
+        <div class="card-body px-4">
+          <div class="dynamic-card-badges">
+            ${buildBadges(item.categorias)}
+          </div>
+          <h5 class="card-title dynamic-card-title">${escapeHtml(item.titulo)}</h5>
+          <p class="card-text dynamic-card-text">${escapeHtml(item.descripcion)}</p>
+        </div>
+        <div class="d-grid py-4 px-4 mt-auto">
           ${buildActionButton(item)}
         </div>
         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
