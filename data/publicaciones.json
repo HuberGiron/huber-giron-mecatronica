@@ -398,7 +398,7 @@
   },
   {
     "id": "pub-mecanum-redesign-2023-repo",
-    "titulo": "Rediseño de ruedas mecanum para su uso en una plataforma vehicular autónoma considerando materiales adecuados, resistencia, desempeño y capacidad de movimiento evaluando su ...",
+    "titulo": "Rediseño de ruedas mecanum para su uso en una plataforma vehicular autónoma",
     "descripcion": "Versión en repositorio institucional del trabajo de rediseño de ruedas mecanum para una plataforma vehicular autónoma.",
     "imagen": "assets/mecanum.png",
     "alt": "Repositorio IBERO Puebla sobre rediseño de ruedas mecanum",
