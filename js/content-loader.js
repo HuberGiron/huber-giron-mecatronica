@@ -141,7 +141,7 @@ async function renderListingPage() {
   const titleNode = document.querySelector("[data-docente-nombre]");
   const subtitleNode = document.querySelector("[data-docente-subtitulo]");
   if (titleNode) titleNode.textContent = DOCENTE_INFO.nombre;
-  if (subtitleNode) subtitleNode.textContent = config.titulo;
+  if (subtitleNode) subtitleNode.textContent = DOCENTE_INFO.subtitulo;
 
   try {
     const items = await fetchSectionItems(tipo);
