@@ -3,7 +3,7 @@
     "id": "pub-thoracic-posture",
     "titulo": "Thoracic Posture measure Wearable based on Acceleration Sensor (MPU-6050) and the Cobb-Lippman angle",
     "descripcion": "Wearable para monitoreo de postura torácica usando sensor MPU-6050 y estimación angular basada en el método Cobb-Lippman.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/posture.gif",
     "alt": "Publicación IEEE MHTC 2025 sobre wearable de postura torácica",
     "categorias": [
       "IEEE",
@@ -63,7 +63,7 @@
     "id": "pub-amaranth-monitoring",
     "titulo": "Monitoring System for Amaranth Cultivation Using Temperature and Humidity Sensors",
     "descripcion": "Sistema de monitoreo agrícola para cultivo de amaranto con sensores de temperatura y humedad, visualización de variables y adquisición en tiempo real.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/amaranto.gif",
     "alt": "Publicación IEEE MHTC 2025 sobre monitoreo de cultivo de amaranto",
     "categorias": [
       "IEEE",
@@ -83,7 +83,7 @@
     "id": "pub-ddos-random-forest",
     "titulo": "Machine Learning-Enhanced DDoS Attack Detection: A Random Forest Approach Using High-Fidelity Simulated Network Traffic Logs",
     "descripcion": "Estudio sobre detección de ataques DDoS mediante aprendizaje automático y un clasificador Random Forest entrenado con registros de tráfico de red simulados de alta fidelidad.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/ddos.gif",
     "alt": "Publicación IEEE MHTC 2025 sobre detección de ataques DDoS",
     "categorias": [
       "IEEE",
@@ -95,9 +95,9 @@
     "fechaISO": "2025-06-02",
     "fechaTexto": "Junio 2025",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
-    "habilitado": false
+    "botonTexto": "Leer más",
+    "url": "https://doi.org/10.1109/MHTC65808.2025.11086436",
+    "habilitado": true
   },
   {
     "id": "pub-seizure-sensor",
@@ -143,7 +143,7 @@
     "id": "pub-transhumeral-prostheses",
     "titulo": "Transhumeral Prostheses and Compliant Mechanisms: A Pathway for Rehabilitation",
     "descripcion": "Trabajo orientado al diseño y análisis de prótesis transhumerales y mecanismos compliant como estrategia para rehabilitación y asistencia funcional.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/protesis.gif",
     "alt": "Publicación ENC 2025 sobre prótesis transhumerales y mecanismos compliant",
     "categorias": [
       "ENC 2025",
@@ -151,18 +151,18 @@
     ],
     "autor": "Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2025-05-10",
-    "fechaTexto": "2025",
+    "fechaISO": "2025-11-14",
+    "fechaTexto": "14 Noviembre 2025",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
+    "botonTexto": "Leer más",
+    "url": "https://doi.org/10.1109/enc68268.2025.11311940",
     "habilitado": false
   },
   {
     "id": "pub-smart-polymeric-materials",
     "titulo": "Opportunities of Smart Polymeric Materials for Autonomous Marine Energy and Sensor Systems",
     "descripcion": "Contribución sobre el potencial de materiales poliméricos inteligentes en sistemas autónomos de energía marina y plataformas sensóricas.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/polimeric.gif",
     "alt": "Publicación ENC 2025 sobre materiales poliméricos inteligentes",
     "categorias": [
       "ENC 2025",
@@ -170,11 +170,11 @@
     ],
     "autor": "Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2025-05-05",
-    "fechaTexto": "2025",
+    "fechaISO": "2025-11-14",
+    "fechaTexto": "14 Noviembre 2025",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
+    "botonTexto": "Leer más",
+    "url": "https://doi.org/10.1109/enc68268.2025.11311896",
     "habilitado": false
   },
   {
