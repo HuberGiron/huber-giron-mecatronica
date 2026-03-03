@@ -55,5 +55,23 @@
     "botonTexto": "Leer más",
     "url": "https://mecatronica-ibero.mx/teachable/",
     "habilitado": true
+  },
+  {
+    "id": "proyecto-teachable",
+    "titulo": "Modelo Cinemático Robot Móvil",
+    "descripcion": "EEsta simulación ilustra la cinemática de robots móviles.",
+    "imagen": "assets/robot-movil.png",
+    "alt": "Plataforma robot movil",
+    "categorias": [
+      "Robótica"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2025-03-02",
+    "fechaTexto": "2 Marzo 2025",
+    "tipoEtiqueta": "Proyecto",
+    "botonTexto": "Leer más",
+    "url": "https://hubergiron.github.io/Robot-convergencia/",
+    "habilitado": true
   }
 ]
