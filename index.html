@@ -39,24 +39,27 @@
         .dynamic-content-card .card-body {
             display: flex;
             flex-direction: column;
-            min-height: 230px;
+            flex: 1 1 auto;
+            min-height: 260px;
+            padding-top: 1.15rem;
+            padding-bottom: 0.55rem;
         }
 
         .dynamic-card-badges {
-            min-height: 2.65rem;
-            max-height: 2.65rem;
+            min-height: 2.45rem;
+            max-height: 2.45rem;
             overflow: hidden;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.1rem;
         }
 
         .dynamic-card-badges .badge {
-            margin-bottom: 0.2rem !important;
+            margin-bottom: 0.15rem !important;
         }
 
         .dynamic-card-title {
             min-height: 4.05rem;
-            margin-top: 0.35rem;
-            margin-bottom: 0.35rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.22rem;
             font-size: 1.02rem;
             font-weight: 700;
             display: -webkit-box;
@@ -67,15 +70,21 @@
         }
 
         .dynamic-card-text {
-            min-height: 4.05rem;
+            min-height: 6.6rem;
             margin-bottom: 0;
-            font-size: 0.93rem;
+            font-size: 0.9rem;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            line-height: 1.35rem;
+            line-height: 1.32rem;
             color: #5c636a;
+            flex-grow: 1;
+        }
+
+        .dynamic-card-actions {
+            padding-top: 0.6rem !important;
+            padding-bottom: 1rem !important;
         }
 
         .dynamic-content-card .card-footer {

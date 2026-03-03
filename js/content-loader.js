@@ -63,7 +63,7 @@ function buildCard(item) {
           <h5 class="card-title dynamic-card-title mb-0">${escapeHtml(item.titulo)}</h5>
           <p class="card-text dynamic-card-text">${escapeHtml(item.descripcion)}</p>
         </div>
-        <div class="d-grid py-4 px-4 mt-auto">
+        <div class="d-grid px-4 dynamic-card-actions">
           ${buildActionButton(item)}
         </div>
         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
