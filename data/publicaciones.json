@@ -175,7 +175,7 @@
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/enc68268.2025.11311896",
-    "habilitado": false
+    "habilitado": true
   },
   {
     "id": "pub-ur5e-object-recognition",
@@ -195,7 +195,7 @@
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Sin enlace",
     "url": "",
-    "habilitado": false
+    "habilitado": true
   },
   {
     "id": "pub-visual-impairment-training",
