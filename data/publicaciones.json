@@ -297,29 +297,10 @@
     "habilitado": true
   },
   {
-    "id": "pub-omni-three-wheels-2024-repo",
-    "titulo": "Sistema de control para la coordinación del movimiento grupal de robots autónomos móviles omnidireccionales de tres llantas",
-    "descripcion": "Versión en repositorio institucional del trabajo sobre coordinación grupal de robots móviles omnidireccionales de tres llantas.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Repositorio IBERO Puebla sobre coordinación grupal de robots omnidireccionales",
-    "categorias": [
-      "Repositorio IBERO Puebla",
-      "Trabajo recepcional"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2024-08-18",
-    "fechaTexto": "2024",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "https://repositorio.iberopuebla.mx/handle/20.500.11777/6131",
-    "habilitado": true
-  },
-  {
     "id": "pub-multi-robot-lowcost",
     "titulo": "Cyber-physical Multi-robot Formation: Virtual Agents Approach and Low-Cost Experiments",
     "descripcion": "Contribución en memorias de congreso sobre formación multi-robot con agentes virtuales y validación experimental de bajo costo.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/cnca.png",
     "alt": "Publicación CNCA 2023 sobre formación multi-robot",
     "categorias": [
       "AMCA",
@@ -339,7 +320,7 @@
     "id": "pub-warehouse-logistics-robot",
     "titulo": "Development of an Autonomous Mobile Robot Mechatronic System at Scale for Industrial Logistics in Warehouses",
     "descripcion": "Desarrollo de un sistema mecatrónico de robot móvil autónomo a escala para aplicaciones de logística industrial en almacenes.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/warehouse2.gif",
     "alt": "Publicación ICEV 2023 sobre robot móvil para logística en almacenes",
     "categorias": [
       "IEEE",
@@ -352,67 +333,7 @@
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
-  },
-  {
-    "id": "pub-elderly-assistance-vision-2023",
-    "titulo": "Desarrollo de un prototipo de robot móvil autónomo con navegación basada en visión por computadora para la asistencia de adultos mayores dentro de entornos controlados",
-    "descripcion": "Prototipo de robot móvil autónomo con navegación basada en visión por computadora para asistencia de adultos mayores en entornos controlados.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Trabajo sobre robot móvil autónomo para asistencia de adultos mayores",
-    "categorias": [
-      "2023",
-      "Robótica móvil",
-      "Visión por computadora"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2023-10-10",
-    "fechaTexto": "2023",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
-  },
-  {
-    "id": "pub-mecanum-feasibility-2023",
-    "titulo": "Análisis de la viabilidad técnica y económica de la fabricación de ruedas Mecanum con tecnologías de manufactura avanzada",
-    "descripcion": "Evaluación técnica y económica para fabricar ruedas Mecanum utilizando tecnologías de manufactura avanzada.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Trabajo sobre viabilidad de fabricación de ruedas Mecanum",
-    "categorias": [
-      "2023",
-      "Manufactura avanzada",
-      "Robótica móvil"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2023-10-08",
-    "fechaTexto": "2023",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "",
-    "habilitado": false
-  },
-  {
-    "id": "pub-payload-robot-2023",
-    "titulo": "Desarrollo de un prototipo de robot móvil autónomo con capacidad de desplazamiento y transporte de paquetes.",
-    "descripcion": "Desarrollo de un robot móvil autónomo orientado al desplazamiento y al transporte de paquetes.",
-    "imagen": "assets/mdpi1.png",
-    "alt": "Trabajo sobre robot móvil autónomo para transporte de paquetes",
-    "categorias": [
-      "2023",
-      "Robótica móvil",
-      "Logística"
-    ],
-    "autor": "Dr. Huber Girón Nieto",
-    "avatar": "/assets/img/team/huber.jpg",
-    "fechaISO": "2023-10-06",
-    "fechaTexto": "2023",
-    "tipoEtiqueta": "Publicación",
-    "botonTexto": "Leer más",
-    "url": "",
+    "url": "https://doi.org/10.1109/ICEV59168.2023.10329674",
     "habilitado": false
   },
   {
