@@ -152,7 +152,7 @@
     "autor": "Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
     "fechaISO": "2025-11-14",
-    "fechaTexto": "14 Noviembre 2025",
+    "fechaTexto": "Noviembre 2025",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/enc68268.2025.11311940",
@@ -171,7 +171,7 @@
     "autor": "Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
     "fechaISO": "2025-11-14",
-    "fechaTexto": "14 Noviembre 2025",
+    "fechaTexto": "Noviembre 2025",
     "tipoEtiqueta": "Publicación",
     "botonTexto": "Leer más",
     "url": "https://doi.org/10.1109/enc68268.2025.11311896",
@@ -181,47 +181,47 @@
     "id": "pub-ur5e-object-recognition",
     "titulo": "Development of an object recognition-based assistance system for surgical instrumentation using an UR5e robotic arm",
     "descripcion": "Sistema de asistencia para instrumentación quirúrgica basado en reconocimiento de objetos y manipulación con brazo robótico UR5e.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/ur.gif",
     "alt": "Publicación ICEV 2024 sobre asistencia quirúrgica con UR5e",
     "categorias": [
       "IEEE",
       "ICEV 2024",
       "Conference Paper"
     ],
-    "autor": "Dr. Huber Girón Nieto",
+    "autor": "*Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
     "fechaISO": "2024-09-20",
     "fechaTexto": "2024",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
+    "botonTexto": "Leer más",
+    "url": "https://doi.org/10.1109/ICEV63254.2024.10765997",
     "habilitado": true
   },
   {
     "id": "pub-visual-impairment-training",
     "titulo": "Development of a training system for gross psychomotor skills in visually impaired individuals",
     "descripcion": "Desarrollo de un sistema de entrenamiento enfocado en habilidades psicomotoras gruesas para personas con discapacidad visual.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/topos.gif",
     "alt": "Publicación ICEV 2024 sobre entrenamiento psicomotor para personas con discapacidad visual",
     "categorias": [
       "IEEE",
       "ICEV 2024",
       "Conference Paper"
     ],
-    "autor": "Dr. Huber Girón Nieto",
+    "autor": "*Dr. Huber Girón Nieto",
     "avatar": "/assets/img/team/huber.jpg",
     "fechaISO": "2024-09-18",
     "fechaTexto": "2024",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
+    "botonTexto": "Leer más",
+    "url": "https://doi.org/10.1109/ICEV63254.2024.10766030",
     "habilitado": false
   },
   {
     "id": "pub-unicycle-qr",
     "titulo": "Convergence Implemented in Unicycle Mobile Robots Using QR Codes and Vision Computer",
     "descripcion": "Trabajo enfocado en control y convergencia de robots móviles tipo uniciclo con apoyo de visión por computadora y códigos QR para localización.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/andescon.gif",
     "alt": "Publicación IEEE ANDESCON 2024 sobre robots móviles tipo uniciclo",
     "categorias": [
       "IEEE",
@@ -241,7 +241,7 @@
     "id": "pub-nutrition-clinic-app",
     "titulo": "Aplicación para la calendarización y gestión de citas de pacientes de la clínica de nutrición de la Universidad Iberoamericana Puebla.",
     "descripcion": "Aplicación para programar y gestionar citas de pacientes en la clínica de nutrición de la Universidad Iberoamericana Puebla.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/nutricion.png",
     "alt": "Publicación 2024 sobre calendarización y gestión de citas en clínica de nutrición",
     "categorias": [
       "2024",
@@ -253,15 +253,15 @@
     "fechaISO": "2024-09-10",
     "fechaTexto": "2024",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
-    "habilitado": false
+    "botonTexto": "Leer más",
+    "url": "https://hdl.handle.net/20.500.11777/6006",
+    "habilitado": true
   },
   {
     "id": "pub-omni-three-wheels-2024",
     "titulo": "Sistema de control para la coordinación del movimiento grupal de robots autónomos móviles omnidireccionales de tres llantas",
     "descripcion": "Propuesta de control para coordinar el movimiento grupal de robots autónomos móviles omnidireccionales de tres llantas.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/3ruedas.png",
     "alt": "Publicación 2024 sobre coordinación grupal de robots omnidireccionales de tres llantas",
     "categorias": [
       "2024",
@@ -273,15 +273,15 @@
     "fechaISO": "2024-09-08",
     "fechaTexto": "2024",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
-    "url": "",
-    "habilitado": false
+    "botonTexto": "Leer más",
+    "url": "https://hdl.handle.net/20.500.11777/6131",
+    "habilitado": true
   },
   {
     "id": "pub-pediatric-prosthesis-validation",
     "titulo": "Validación mecánica de un sistema modular para prótesis de miembro inferior en pacientes pediátricos",
     "descripcion": "Trabajo de validación mecánica de una prótesis modular de miembro inferior orientada a pacientes pediátricos.",
-    "imagen": "assets/mdpi1.png",
+    "imagen": "assets/protesis2.png",
     "alt": "Trabajo recepcional sobre prótesis modular pediátrica",
     "categorias": [
       "Repositorio IBERO Puebla",
@@ -351,7 +351,7 @@
     "fechaISO": "2023-10-12",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -371,7 +371,7 @@
     "fechaISO": "2023-10-10",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -391,7 +391,7 @@
     "fechaISO": "2023-10-08",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -411,7 +411,7 @@
     "fechaISO": "2023-10-06",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -431,7 +431,7 @@
     "fechaISO": "2023-10-04",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -451,7 +451,7 @@
     "fechaISO": "2023-10-02",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -471,7 +471,7 @@
     "fechaISO": "2023-09-30",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -491,7 +491,7 @@
     "fechaISO": "2023-09-28",
     "fechaTexto": "2023",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   },
@@ -625,7 +625,7 @@
     "fechaISO": "2020-01-15",
     "fechaTexto": "2020",
     "tipoEtiqueta": "Publicación",
-    "botonTexto": "Sin enlace",
+    "botonTexto": "Leer más",
     "url": "",
     "habilitado": false
   }
