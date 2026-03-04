@@ -71,7 +71,7 @@ function buildCard(item) {
           <div class="d-flex align-items-center">
             <a href=""${escapeHtml(DOCENTE_INFO.page)}""><img class="rounded-circle me-3" src="${escapeHtml(item.avatar || DOCENTE_INFO.foto)}" alt="${escapeHtml(item.autor || DOCENTE_INFO.nombre)}" width="40"></a>
             <div class="small">
-              <a href=""${escapeHtml(DOCENTE_INFO.page)}""><div class="fw-bold">${escapeHtml(item.autor || DOCENTE_INFO.nombre)}</div></a>
+              <div class="fw-bold">${escapeHtml(item.autor || DOCENTE_INFO.nombre)}</div>
               <div class="text-muted">${escapeHtml(item.fechaTexto || "")}</div>
             </div>
           </div>
