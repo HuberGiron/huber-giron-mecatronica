@@ -4,7 +4,6 @@
     linear-gradient(135deg, rgba(31, 41, 55, 0.92), rgba(31, 41, 55, 0.78)),
     radial-gradient(circle at top left, rgba(239, 64, 68, 0.32), transparent 38%);
   color: #fff;
-  padding: 4.3rem 0 3.6rem;
 }
 
 .eyebrow {
@@ -265,9 +264,6 @@
 }
 
 @media (max-width: 991.98px) {
-  .course-hero {
-    padding: 3.4rem 0 2.9rem;
-  }
 
   .schedule-toolbar {
     align-items: stretch;
