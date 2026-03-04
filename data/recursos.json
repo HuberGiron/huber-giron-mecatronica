@@ -55,5 +55,24 @@
     "botonTexto": "Leer más",
     "url": "https://hubergiron.github.io/portafolio-just-the-docs/",
     "habilitado": true
+  },
+    {
+    "id": "recurso-plantilla-repo",
+    "titulo": "Programación de Microcontroladores",
+    "descripcion": "Esta guía está pensada para enseñar a programar desde cero tres familias de plataformas: Seeed Studio XIAO RP2040, ESP32 (ESP32-WROOM-32 y Seeed Studio XIAO ESP32S3 Sense) y ATmega328P.",
+    "imagen": "assets/xiao.png",
+    "alt": "Programación de Microcontroladores",
+    "categorias": [
+      "IoT",
+      "Embebidos"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.jpg",
+    "fechaISO": "2026-01-19",
+    "fechaTexto": "20 Enero 2026",
+    "tipoEtiqueta": "Recurso",
+    "botonTexto": "Leer más",
+    "url": "https://hubergiron.github.io/embebidos/",
+    "habilitado": true
   }
 ]
