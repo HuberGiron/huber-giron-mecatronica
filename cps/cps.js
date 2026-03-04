@@ -1,30 +1,30 @@
 const studentProjects = [
   {
     semester: 'Primavera 2026',
-    title: 'Luis Cortés y Emanuel Iturbide',
+    title: 'Luis Cortés Muñoz y Emanuel Iturbe Rebolledo',
     url: 'https://luiscortesmunoz.github.io/Practicas_Sistemas_Ciberfisicos/',
-    buttonText: 'Abrir proyecto',
+    buttonText: 'Abrir portafolio',
     enabled: true
   },
   {
     semester: 'Primavera 2026',
-    title: 'Ana Camila Sánchez y Alexander Eduardo Moncada',
+    title: 'Ana Camila Sánchez Guevara y Alexander Eduardo Moncada Rivas',
     url: 'https://camilasg25.github.io/Projects_page/',
-    buttonText: 'Abrir proyecto',
+    buttonText: 'Abrir portafolio',
     enabled: true
   },
   {
     semester: 'Primavera 2026',
-    title: 'Renata Badillo y Martha Valdes',
+    title: 'Renata Darany Badillo Cabrera y Martha Esther Valdes Cruz',
     url: '',
     buttonText: 'Próximamente',
     enabled: false
   },
   {
     semester: 'Otoño 2025',
-    title: 'Sebastian Mendez, Daniela Colin y Haili Avila',
+    title: 'Sebastian Mendez Villegas, Daniela Renee Colin Tinoco y Haili Ailin Avila Ramirez',
     url: 'https://sebas30073007.github.io/Sistemas_Ciberfisicos_Proyecto/',
-    buttonText: 'Abrir proyecto',
+    buttonText: 'Abrir portafolio',
     enabled: true
   }
 ];
