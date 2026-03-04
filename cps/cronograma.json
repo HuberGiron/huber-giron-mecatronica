@@ -9,7 +9,7 @@
         "block": "Introducción",
         "topic": "Relación entre sistemas mecatrónicos y sistemas ciberfísicos",
         "activity": "Introducción a CPS, benchmark de protocolos y benchmark de dispositivos inteligentes.",
-        "lessonUrl": "",
+        "lessonUrl": "pdf/cps1.pdf",
         "lessonText": "Lección / tutorial",
         "enabled": false
       },
@@ -18,18 +18,18 @@
         "block": "Arquitectura",
         "topic": "Documentación y diagramas de integración",
         "activity": "Documentación en Just the Docs y diagramas para integración de sistemas o arquitecturas.",
-        "lessonUrl": "",
+        "lessonUrl": "https://hubergiron.github.io/portafolio-just-the-docs/",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       },
       {
         "date": "15 enero",
         "block": "Medición",
         "topic": "Comparación de capacidad de cómputo",
         "activity": "Ejercicio de medición de tiempos de procesamiento en 2 embebidos y 2 computadoras.",
-        "lessonUrl": "",
+        "lessonUrl": "pdf/Benchmark.xlsx",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       }
     ]
   },
@@ -43,9 +43,9 @@
         "block": "Embebidos",
         "topic": "IO, sensores, actuadores y monitor serial",
         "activity": "Introducción al uso del procesador embebido, entradas/salidas y apoyo de IA para programación.",
-        "lessonUrl": "",
+        "lessonUrl": "https://hubergiron.github.io/embebidos/",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       },
       {
         "date": "21 enero",
@@ -53,7 +53,7 @@
         "topic": "Diseño con KiCad y corte de PCB",
         "activity": "Diseño de PCB con KiCad y fabricación en Roland SRM20.",
         "lessonUrl": "",
-        "lessonText": "Lección / tutorial",
+        "lessonText": "Proximamente",
         "enabled": false
       },
       {
@@ -61,9 +61,9 @@
         "block": "Práctica",
         "topic": "PCB propia para microcontrolador SMD",
         "activity": "Diseño de tarjeta propia para un microcontrolador SMD.",
-        "lessonUrl": "",
+        "lessonUrl": "pcb.pdf",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       }
     ]
   },
@@ -77,9 +77,9 @@
         "block": "Protocolos",
         "topic": "Comunicación embebida y métricas",
         "activity": "Pruebas de envío, estrés, gráficas, latencia y tasa de error en UART, SPI e I2C.",
-        "lessonUrl": "",
+        "lessonUrl": "pdf/cps2.pdf",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       },
       {
         "date": "28 enero",
@@ -87,7 +87,7 @@
         "topic": "Prueba de protocolos UART, SPI e I2C",
         "activity": "Sesión práctica de validación y comparación de protocolos.",
         "lessonUrl": "",
-        "lessonText": "Lección / tutorial",
+        "lessonText": "Práctica",
         "enabled": false
       },
       {
@@ -96,7 +96,7 @@
         "topic": "Prueba de protocolos UART, SPI e I2C",
         "activity": "Continuación de pruebas y documentación de resultados.",
         "lessonUrl": "",
-        "lessonText": "Lección / tutorial",
+        "lessonText": "Práctica",
         "enabled": false
       }
     ]
