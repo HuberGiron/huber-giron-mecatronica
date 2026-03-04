@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecatrónica IBERO | Sistemas Ciberfísicos de Automatización y Laboratorio</title>
+  <meta name="description" content="Curso de Sistemas Ciberfísicos de Automatización y Laboratorio en Mecatrónica IBERO. Incluye resumen, evaluación, proyectos de alumnos, descarga de GEP y cronograma con enlaces a lecciones.">
+
+  <link rel="icon" type="image/png" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="/assets/styles.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --ibero-red: #ef4044;
+      --soft-gray: #f6f7f9;
+      --border-soft: #e8eaed;
+      --text-soft: #60656d;
+      --navy-soft: #1f2937;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+    }
+
+    .course-hero {
+      background:
+        linear-gradient(135deg, rgba(31,41,55,0.92), rgba(31,41,55,0.78)),
+        radial-gradient(circle at top left, rgba(239,64,68,0.32), transparent 38%);
+      color: #fff;
+      padding: 4.3rem 0 3.6rem;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.08;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-text {
+      font-size: 1.14rem;
+      color: rgba(255,255,255,0.84);
+      max-width: 850px;
+      margin-bottom: 0;
+    }
+
+    .hero-chip,
+    .meta-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.11);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+      margin: 0.2rem 0.35rem 0.2rem 0;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      color: var(--text-soft);
+      font-size: 1.05rem;
+      margin-bottom: 0;
+    }
+
+    .info-card,
+    .student-card,
+    .summary-card,
+    .schedule-card,
+    .book-card {
+      background: #fff;
+      border: 1px solid var(--border-soft);
+      border-radius: 1.15rem;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+      height: 100%;
+    }
+
+    .summary-card,
+    .schedule-card {
+      padding: 1.35rem;
+    }
+
+    .info-card .card-body,
+    .student-card .card-body,
+    .book-card .card-body {
+      padding: 1.25rem;
+    }
+
+    .metric-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--ibero-red);
+      line-height: 1;
+    }
+
+    .metric-label {
+      color: var(--text-soft);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .mini-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+      color: var(--navy-soft);
+    }
+
+    .soft-list {
+      margin: 0;
+      padding-left: 1.05rem;
+      color: var(--text-soft);
+    }
+
+    .soft-list li + li {
+      margin-top: 0.38rem;
+    }
+
+    .accent-box {
+      background: var(--soft-gray);
+      border: 1px solid var(--border-soft);
+      border-radius: 1rem;
+      padding: 1rem 1.05rem;
+    }
+
+    .student-semester {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(239,64,68,0.1);
+      color: #b42326;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .student-card h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .student-card p {
+      color: var(--text-soft);
+      margin-bottom: 0.85rem;
+    }
+
+    .schedule-toolbar {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .schedule-search {
+      max-width: 380px;
+      width: 100%;
+    }
+
+    .accordion-week {
+      border: 1px solid var(--border-soft);
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .accordion-week + .accordion-week {
+      margin-top: 1rem;
+    }
+
+    .accordion-week .accordion-button {
+      box-shadow: none;
+      padding: 1rem 1.1rem;
+      font-weight: 700;
+      background: #fff;
+      gap: 0.6rem;
+    }
+
+    .accordion-week .accordion-button:not(.collapsed) {
+      color: #111827;
+      background: #fff;
+      box-shadow: inset 0 -1px 0 rgba(0,0,0,0.04);
+    }
+
+    .week-index {
+      display: inline-flex;
+      width: 2rem;
+      height: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(239,64,68,0.12);
+      color: #b42326;
+      font-size: 0.88rem;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+
+    .week-range {
+      color: var(--text-soft);
+      font-size: 0.94rem;
+      font-weight: 600;
+      margin-left: auto;
+      padding-left: 0.75rem;
+    }
+
+    .session-item {
+      border: 1px solid var(--border-soft);
+      border-radius: 0.95rem;
+      padding: 0.95rem;
+      background: #fbfbfc;
+      height: 100%;
+    }
+
+    .session-date {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--ibero-red);
+      margin-bottom: 0.35rem;
+    }
+
+    .session-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .session-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .session-meta .badge {
+      font-weight: 600;
+    }
+
+    .session-description {
+      color: var(--text-soft);
+      margin-bottom: 0.85rem;
+      line-height: 1.4;
+      min-height: 4.4rem;
+    }
+
+    .schedule-empty {
+      display: none;
+      padding: 1rem 1.15rem;
+      border: 1px dashed #c7ccd4;
+      border-radius: 1rem;
+      color: var(--text-soft);
+      background: #fafafa;
+    }
+
+    .book-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+
+    .book-card p {
+      color: var(--text-soft);
+      margin-bottom: 0;
+    }
+
+    .footer-note {
+      color: var(--text-soft);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 991.98px) {
+      .course-hero {
+        padding: 3.4rem 0 2.9rem;
+      }
+
+      .schedule-toolbar {
+        align-items: stretch;
+      }
+
+      .schedule-search {
+        max-width: none;
+      }
+
+      .week-range {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2.6rem;
+        padding-top: 0.15rem;
+      }
+    }
+  </style>
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container-fluid px-lg-4">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="https://licenciaturas.ibero.mx/ingenieria-en-mecatronica-y-sistemas-ciberfisicos">Admisiones</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="vidaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vida universitaria
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vidaDropdown">
+              <li><a class="dropdown-item" href="/vida_universitaria/plan_estudios.html">Plan de estudios</a></li>
+              <li><a class="dropdown-item" href="/vida_universitaria/grupos_estudiantiles.html">Grupos estudiantiles</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="academiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academia e investigación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="academiaDropdown">
+              <li><a class="dropdown-item" href="/academia/academicos.html">Académicos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="instalacionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instalaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="instalacionesDropdown">
+              <li><a class="dropdown-item" href="https://laboratorios.ibero.mx/laboratorios/?acp=23">Laboratorios</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="course-hero">
+    <div class="container px-4 px-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-9">
+          <div class="eyebrow mb-2">Curso · Primavera 2026</div>
+          <h1 class="hero-title">Sistemas Ciberfísicos de Automatización y Laboratorio</h1>
+          <p class="hero-text mb-4">
+            Curso orientado al análisis, diseño e implementación de sistemas ciberfísicos para automatización industrial,
+            integrando embebidos, web, nube, bases de datos, automatización, protocolos industriales e inteligencia artificial.
+          </p>
+          <div>
+            <span class="hero-chip"><i class="bi bi-hash"></i> Clave 80031</span>
+            <span class="hero-chip"><i class="bi bi-book"></i> Sigla IE103</span>
+            <span class="hero-chip"><i class="bi bi-collection"></i> Grupo A</span>
+            <span class="hero-chip"><i class="bi bi-clock-history"></i> 6 h/semana</span>
+            <span class="hero-chip"><i class="bi bi-award"></i> 10 créditos</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="summary-card h-100" style="background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.15); color: #fff;">
+            <div class="mini-title text-white mb-3">Accesos rápidos</div>
+            <div class="d-grid gap-2">
+              <a class="btn btn-light btn-lg" id="gepDownloadBtn" href="P26-Sistemas Ciberfisicos y Lab FIRMADO.pdf" target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-pdf me-2"></i>Descargar GEP
+              </a>
+              <a class="btn btn-outline-light btn-lg" href="#cronograma">
+                <i class="bi bi-calendar3 me-2"></i>Ver cronograma
+              </a>
+              <a class="btn btn-outline-light btn-lg" href="#alumnos">
+                <i class="bi bi-people me-2"></i>Ver proyectos de alumnos
+              </a>
+            </div>
+            <p class="small mt-3 mb-0" style="color: rgba(255,255,255,0.78);">
+              Ajusta la ruta del PDF si en tu sitio lo guardarás en otra carpeta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="summary-card h-100">
+              <h2 class="section-title">Resumen del curso</h2>
+              <p class="section-subtitle mb-4">
+                Esta página reúne la información más útil para el alumnado: datos clave del curso, evaluación, bibliografía base,
+                proyectos de alumnos y un cronograma editable con botones para enlazar cada lección o tutorial.
+              </p>
+
+              <div class="accent-box mb-3">
+                <div class="mini-title">¿Qué vas a desarrollar?</div>
+                <ul class="soft-list">
+                  <li>Conexión y comparación de protocolos entre dispositivos industriales y sistemas embebidos.</li>
+                  <li>Diseño de servicios de monitoreo, adquisición de datos y control remoto.</li>
+                  <li>Implementación de interfaces web, APIs, despliegue en nube y bases de datos.</li>
+                  <li>Integración de automatización industrial, protocolos web, IA y visualización.</li>
+                  <li>Desarrollo de un proyecto ciberfísico completo con documentación final.</li>
+                </ul>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="accent-box h-100">
+                    <div class="mini-title">Docentes</div>
+                    <p class="mb-1"><strong>Dr. Huber Girón Nieto</strong></p>
+                    <p class="mb-2 text-muted">huber.giron@ibero.mx</p>
+                    <p class="mb-1"><strong>Joel Arango Ramírez</strong></p>
+                    <p class="mb-0 text-muted">joel.arango@ibero.mx</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="accent-box h-100">
+                    <div class="mini-title">Prerrequisitos y base recomendada</div>
+                    <ul class="soft-list">
+                      <li><strong>Materia acreditada:</strong> Automatización de sistemas productivos y laboratorio.</li>
+                      <li><strong>Conocimientos esenciales:</strong> programación estructurada y automatización industrial.</li>
+                      <li><strong>Semestre ideal:</strong> 9.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="row g-3 h-100">
+              <div class="col-12">
+                <div class="info-card h-100">
+                  <div class="card-body">
+                    <div class="mini-title">Evaluación</div>
+                    <div class="row g-3 text-center">
+                      <div class="col-4">
+                        <div class="metric-number">60%</div>
+                        <p class="metric-label">Portafolio</p>
+                      </div>
+                      <div class="col-4">
+                        <div class="metric-number">30%</div>
+                        <p class="metric-label">Proyecto final</p>
+                      </div>
+                      <div class="col-4">
+                        <div class="metric-number">10%</div>
+                        <p class="metric-label">Presentación</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="info-card h-100">
+                  <div class="card-body">
+                    <div class="mini-title">Notas importantes</div>
+                    <ul class="soft-list">
+                      <li>Las entregas tardías de hasta 3 días tienen deducción del 40%.</li>
+                      <li>Después de 3 días, la entrega no tiene derecho a calificación.</li>
+                      <li>Las calificaciones finales aprobatorias se redondean desde 0.5 décimas.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="info-card h-100">
+                  <div class="card-body">
+                    <div class="mini-title">Fechas importantes</div>
+                    <p class="mb-2 text-muted">Suspensión de clases:</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge bg-danger bg-gradient rounded-pill">31 marzo</span>
+                      <span class="badge bg-danger bg-gradient rounded-pill">1 abril</span>
+                      <span class="badge bg-danger bg-gradient rounded-pill">2 abril</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="book-card h-100">
+              <div class="card-body">
+                <h3><i class="bi bi-journal-text me-2 text-primary"></i>Bibliografía base</h3>
+                <p class="mb-2"><strong>Alur, R.</strong> <em>Principles of Cyber-Physical Systems</em>. MIT Press, 2015.</p>
+                <p class="mb-2"><strong>Fei, H.</strong> <em>Cyber-Physical Systems: Integrated Computing and Engineering Design</em>. CRC Press, 2014.</p>
+                <p class="mb-0"><strong>Rajkumar, R., de Niz, D. y Klein, M.</strong> <em>Cyber-Physical Systems</em>. Addison-Wesley, 2016.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="book-card h-100">
+              <div class="card-body">
+                <h3><i class="bi bi-tools me-2 text-primary"></i>Enfoque práctico</h3>
+                <p class="mb-2">Uso de servicios web y servidores locales para almacenamiento, gestión y consulta.</p>
+                <p class="mb-2">Uso de entornos de desarrollo para programar dispositivos industriales, embebidos y robots.</p>
+                <p class="mb-0">Uso de dispositivos industriales y embebidos para automatización en sistemas ciberfísicos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alumnos" class="py-5 bg-light">
+      <div class="container px-4 px-lg-5">
+        <div class="mb-4">
+          <h2 class="section-title">Proyectos de alumnos</h2>
+          <p class="section-subtitle">Espacio para concentrar enlaces a prácticas, reportes, páginas de proyecto y documentación por semestre.</p>
+        </div>
+
+        <div class="row g-4" id="studentsContainer"></div>
+      </div>
+    </section>
+
+    <section id="cronograma" class="py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="mb-4">
+          <h2 class="section-title">Cronograma del curso</h2>
+          <p class="section-subtitle">
+            Cada semana se despliega con sus sesiones. En cada tema hay un botón para ligar la lección, tutorial o recurso cuando lo tengas publicado.
+          </p>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-toolbar">
+            <div>
+              <span class="meta-chip" style="background: rgba(239,64,68,0.08); color: #b42326; border-color: rgba(239,64,68,0.12);">
+                <i class="bi bi-info-circle"></i> Puedes editar cada URL directamente en el bloque de JavaScript al final del archivo.
+              </span>
+            </div>
+            <div class="schedule-search">
+              <input type="text" class="form-control form-control-lg" id="scheduleSearch" placeholder="Buscar tema, tecnología o palabra clave...">
+            </div>
+          </div>
+
+          <div id="scheduleEmpty" class="schedule-empty">No se encontraron semanas o sesiones con ese criterio de búsqueda.</div>
+          <div id="scheduleAccordion"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>&copy; 2026 Mecatrónica IBERO · Curso de Sistemas Ciberfísicos de Automatización y Laboratorio</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/scripts.js"></script>
+
+  <script>
+    const studentProjects = [
+      {
+        semester: 'Primavera 2026',
+        title: 'Luis Cortés y Emanuel Iturbide',
+        description: 'Sitio de prácticas y materiales del curso.',
+        url: 'https://luiscortesmunoz.github.io/Practicas_Sistemas_Ciberfisicos/',
+        buttonText: 'Abrir proyecto',
+        enabled: true
+      },
+      {
+        semester: 'Primavera 2026',
+        title: 'Ana Camila Sánchez y Alexander Eduardo Moncada',
+        description: 'Página de proyectos y evidencias desarrolladas durante el curso.',
+        url: 'https://camilasg25.github.io/Projects_page/',
+        buttonText: 'Abrir proyecto',
+        enabled: true
+      },
+      {
+        semester: 'Primavera 2026',
+        title: 'Renata Badillo y Martha Valdes',
+        description: 'Espacio reservado para agregar el enlace cuando la página o repositorio esté disponible.',
+        url: '',
+        buttonText: 'Próximamente',
+        enabled: false
+      },
+      {
+        semester: 'Otoño 2025',
+        title: 'Sebastian Mendez, Daniela Colin y Haili Avila',
+        description: 'Proyecto publicado del periodo Otoño 2025.',
+        url: 'https://sebas30073007.github.io/Sistemas_Ciberfisicos_Proyecto/',
+        buttonText: 'Abrir proyecto',
+        enabled: true
+      }
+    ];
+
+    const scheduleWeeks = [
+      {
+        week: 1,
+        range: '13–15 enero',
+        title: 'Introducción a sistemas ciberfísicos y arquitectura',
+        sessions: [
+          {
+            date: '13 enero',
+            block: 'Introducción',
+            topic: 'Relación entre sistemas mecatrónicos y sistemas ciberfísicos',
+            activity: 'Introducción a CPS, benchmark de protocolos y benchmark de dispositivos inteligentes.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '14 enero',
+            block: 'Arquitectura',
+            topic: 'Documentación y diagramas de integración',
+            activity: 'Documentación en Just the Docs y diagramas para integración de sistemas o arquitecturas.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '15 enero',
+            block: 'Medición',
+            topic: 'Comparación de capacidad de cómputo',
+            activity: 'Ejercicio de medición de tiempos de procesamiento en 2 embebidos y 2 computadoras.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 2,
+        range: '20–22 enero',
+        title: 'Sistemas embebidos: IO, sensores, actuadores y PCB',
+        sessions: [
+          {
+            date: '20 enero',
+            block: 'Embebidos',
+            topic: 'IO, sensores, actuadores y monitor serial',
+            activity: 'Introducción al uso del procesador embebido, entradas/salidas y apoyo de IA para programación.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '21 enero',
+            block: 'PCB',
+            topic: 'Diseño con KiCad y corte de PCB',
+            activity: 'Diseño de PCB con KiCad y fabricación en Roland SRM20.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '22 enero',
+            block: 'Práctica',
+            topic: 'PCB propia para microcontrolador SMD',
+            activity: 'Diseño de tarjeta propia para un microcontrolador SMD.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 3,
+        range: '27–29 enero',
+        title: 'Protocolos embebidos: UART, SPI e I2C',
+        sessions: [
+          {
+            date: '27 enero',
+            block: 'Protocolos',
+            topic: 'Comunicación embebida y métricas',
+            activity: 'Pruebas de envío, estrés, gráficas, latencia y tasa de error en UART, SPI e I2C.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '28 enero',
+            block: 'Práctica',
+            topic: 'Prueba de protocolos UART, SPI e I2C',
+            activity: 'Sesión práctica de validación y comparación de protocolos.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '29 enero',
+            block: 'Práctica',
+            topic: 'Prueba de protocolos UART, SPI e I2C',
+            activity: 'Continuación de pruebas y documentación de resultados.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 4,
+        range: '3–5 febrero',
+        title: 'Interfaces de usuario con Python, USB y Bluetooth',
+        sessions: [
+          {
+            date: '3 febrero',
+            block: 'UI',
+            topic: 'Programación con Python y Tkinter',
+            activity: 'Introducción a UI/UX y construcción de interfaces con Python.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '4 febrero',
+            block: 'USB / BLE',
+            topic: 'Protocolos de comunicación embebidos',
+            activity: 'Pruebas de envío, estrés, gráficas, latencia y tasa de error en USB y Bluetooth.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '5 febrero',
+            block: 'Práctica',
+            topic: 'Interfaz con envío de datos por USB y Bluetooth',
+            activity: 'Desarrollo de ejercicio práctico de UI conectada a un sistema embebido.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 5,
+        range: '10–12 febrero',
+        title: 'Servicios web: redes, HTML, CSS, JS y despliegue básico',
+        sessions: [
+          {
+            date: '10 febrero',
+            block: 'Redes',
+            topic: 'IPV4, ping, firewall y tipos de servidor',
+            activity: 'Servidores embebidos, PC local y nube con servicios gratuitos.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '11 febrero',
+            block: 'Web',
+            topic: 'Programación web con HTML, CSS y JS',
+            activity: 'Introducción al stack base para interfaces web del curso.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '12 febrero',
+            block: 'Práctica',
+            topic: 'Página web local y en nube',
+            activity: 'Implementación local en ESP32 y computadora, y publicación inicial en GitHub.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 6,
+        range: '17–19 febrero',
+        title: 'APIs, Flask y ciberseguridad básica',
+        sessions: [
+          {
+            date: '17 febrero',
+            block: 'API',
+            topic: 'Servidor Python Flask y tipos de request',
+            activity: 'Diseño de APIs, mensajes, respuestas y arquitectura básica de back-end.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '18 febrero',
+            block: 'Seguridad',
+            topic: 'Keys, tokens, .env, secretos y logging',
+            activity: 'Buenas prácticas para exponer servicios web de manera segura.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '19 febrero',
+            block: 'Práctica',
+            topic: 'API local que envía instrucciones a un embebido',
+            activity: 'Desarrollo de un flujo de control entre front, API y dispositivo.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 7,
+        range: '24–26 febrero',
+        title: 'Deploy, nube y contenedores',
+        sessions: [
+          {
+            date: '24 febrero',
+            block: 'Deploy',
+            topic: 'Arquitectura cloud, Docker y pipeline build/run',
+            activity: 'Selección de servidor y nociones de CI con GitHub Actions.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '25 febrero',
+            block: 'Práctica',
+            topic: 'Aplicación web completa en distintos servicios cloud',
+            activity: 'Comparación y despliegue en plataformas como Google Cloud, Render, DigitalOcean o AWS.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '26 febrero',
+            block: 'Práctica',
+            topic: 'Aplicación web completa en distintos servicios cloud',
+            activity: 'Continuación del despliegue y pruebas de integración.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 8,
+        range: '3–5 marzo',
+        title: 'Bases de datos y Firebase',
+        sessions: [
+          {
+            date: '3 marzo',
+            block: 'Datos',
+            topic: 'Relacionales, no relacionales y conexión desde Python',
+            activity: 'Despliegue e integración de bases de datos en la nube con Firebase.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '4 marzo',
+            block: 'Práctica',
+            topic: 'Aplicación web con base de datos en la nube',
+            activity: 'Implementación de flujo de datos entre web, nube y elemento embebido.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '5 marzo',
+            block: 'Práctica',
+            topic: 'Aplicación web con base de datos en la nube',
+            activity: 'Continuación de integración y consulta de datos.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 9,
+        range: '10–12 marzo',
+        title: 'Automatización industrial: PLC, HMI y UR',
+        sessions: [
+          {
+            date: '10 marzo',
+            block: 'Industria',
+            topic: 'Elementos de automatización industrial y redes',
+            activity: 'PLC, HMI, UR y redes industriales como TCP, OPC y Urscript.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '11 marzo',
+            block: 'Práctica',
+            topic: 'Aplicación web para monitoreo y control industrial',
+            activity: 'Implementación conectada a un proceso industrial.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '12 marzo',
+            block: 'Práctica',
+            topic: 'Aplicación web para monitoreo y control industrial',
+            activity: 'Continuación del ejercicio y validación funcional.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 10,
+        range: '17–19 marzo',
+        title: 'Protocolos web: TCP, UDP, MQTT y WebSocket',
+        sessions: [
+          {
+            date: '17 marzo',
+            block: 'Protocolos Web',
+            topic: 'Comparativa de TCP vs UDP, MQTT y WebSocket',
+            activity: 'Revisión de protocolos usados en sistemas distribuidos y tiempo real.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '18 marzo',
+            block: 'Práctica',
+            topic: 'Pruebas de latencia, estrés y tasa de errores',
+            activity: 'Comparación experimental de TCP, UDP, WebSocket y MQTT.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '19 marzo',
+            block: 'Práctica',
+            topic: 'Pruebas de latencia, estrés y tasa de errores',
+            activity: 'Continuación de pruebas, gráficas y documentación.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 11,
+        range: '24–26 marzo',
+        title: 'IA y realidad mixta',
+        sessions: [
+          {
+            date: '24 marzo',
+            block: 'IA',
+            topic: 'Visión por computadora y clasificadores',
+            activity: 'Python para visión por computadora y envío de datos a plataforma web.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '25 marzo',
+            block: 'LLM',
+            topic: 'LLM como planificadores y protocolo MCP',
+            activity: 'Uso de Ollama-Python y envío de resultados a una plataforma web.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '26 marzo',
+            block: 'XR',
+            topic: 'Realidad virtual, aumentada y mixta',
+            activity: 'Desarrollo de interfaz de realidad mixta conectada a plataforma web.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 12,
+        range: '7–16 abril',
+        title: 'Gestión de proyectos ciberfísicos',
+        sessions: [
+          {
+            date: '7 abril',
+            block: 'Proyecto',
+            topic: 'Definición del proyecto ciberfísico',
+            activity: 'Automatización industrial con embebidos, nube, visualización, almacenamiento de datos e IA.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '8–9 abril',
+            block: 'Proyecto',
+            topic: 'Desarrollo y revisión de arquitectura',
+            activity: 'Avance del sistema y consolidación del flujo técnico completo.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '14–16 abril',
+            block: 'Proyecto',
+            topic: 'Construcción iterativa del proyecto',
+            activity: 'Integración progresiva de automatización, embebidos y servicios en la nube.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 13,
+        range: '21–30 abril',
+        title: 'Integración, modelado, control y optimización',
+        sessions: [
+          {
+            date: '21–23 abril',
+            block: 'Integración',
+            topic: 'Modelado, control y optimización de sistemas ciberfísicos',
+            activity: 'Integración avanzada del proyecto y consolidación funcional.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '28–30 abril',
+            block: 'Integración',
+            topic: 'Ajuste final del sistema y preparación de entrega',
+            activity: 'Pruebas de desempeño, cierre de integración y afinación de la solución.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      },
+      {
+        week: 14,
+        range: '5–13 mayo',
+        title: 'Entrega, documentación y cierre',
+        sessions: [
+          {
+            date: '5 mayo',
+            block: 'Entrega',
+            topic: 'Entrega de proyecto',
+            activity: 'Cierre formal y evaluación del proyecto ciberfísico.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '6–12 mayo',
+            block: 'Documentación',
+            topic: 'Documentación del proyecto',
+            activity: 'Integración de evidencia, resultados, arquitectura y entregables finales.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          },
+          {
+            date: '13 mayo',
+            block: 'Cierre',
+            topic: 'Entrega de calificaciones',
+            activity: 'Cierre administrativo del curso.',
+            lessonUrl: '',
+            lessonText: 'Lección / tutorial',
+            enabled: false
+          }
+        ]
+      }
+    ];
+
+    function renderStudents() {
+      const container = document.getElementById('studentsContainer');
+      container.innerHTML = studentProjects.map(project => `
+        <div class="col-md-6 col-xl-4">
+          <div class="student-card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="student-semester">${project.semester}</span>
+              <h3>${project.title}</h3>
+              <p class="flex-grow-1">${project.description}</p>
+              ${project.enabled
+                ? `<a class="btn btn-primary" href="${project.url}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i>${project.buttonText}</a>`
+                : `<button class="btn btn-outline-secondary" type="button" disabled><i class="bi bi-hourglass-split me-2"></i>${project.buttonText}</button>`}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderSchedule(filterText = '') {
+      const accordion = document.getElementById('scheduleAccordion');
+      const empty = document.getElementById('scheduleEmpty');
+      const filter = filterText.trim().toLowerCase();
+
+      const filteredWeeks = scheduleWeeks
+        .map(week => {
+          const sessions = week.sessions.filter(session => {
+            const haystack = `${week.title} ${week.range} ${session.date} ${session.block} ${session.topic} ${session.activity}`.toLowerCase();
+            return haystack.includes(filter);
+          });
+          return { ...week, sessions };
+        })
+        .filter(week => week.sessions.length > 0);
+
+      if (filteredWeeks.length === 0) {
+        accordion.innerHTML = '';
+        empty.style.display = 'block';
+        return;
+      }
+
+      empty.style.display = 'none';
+
+      accordion.innerHTML = filteredWeeks.map((week, index) => `
+        <div class="accordion accordion-week" id="accordion-week-${week.week}">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="heading-${week.week}">
+              <button class="accordion-button ${index === 0 ? '' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${week.week}" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="collapse-${week.week}">
+                <span class="week-index">${week.week}</span>
+                <span>${week.title}</span>
+                <span class="week-range">${week.range}</span>
+              </button>
+            </h2>
+            <div id="collapse-${week.week}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="heading-${week.week}">
+              <div class="accordion-body p-3 p-lg-4">
+                <div class="row g-3">
+                  ${week.sessions.map(session => `
+                    <div class="col-md-6 col-xl-4">
+                      <div class="session-item">
+                        <div class="session-date">${session.date}</div>
+                        <div class="session-title">${session.topic}</div>
+                        <div class="session-meta">
+                          <span class="badge bg-primary bg-gradient rounded-pill">${session.block}</span>
+                          <span class="badge bg-light text-dark border rounded-pill">Semana ${week.week}</span>
+                        </div>
+                        <p class="session-description">${session.activity}</p>
+                        ${session.enabled
+                          ? `<a class="btn btn-sm btn-primary" href="${session.lessonUrl}" target="_blank" rel="noopener"><i class="bi bi-journal-bookmark me-2"></i>${session.lessonText}</a>`
+                          : `<button class="btn btn-sm btn-outline-secondary" type="button" disabled><i class="bi bi-link-45deg me-2"></i>${session.lessonText}</button>`}
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    document.getElementById('scheduleSearch').addEventListener('input', (event) => {
+      renderSchedule(event.target.value);
+    });
+
+    renderStudents();
+    renderSchedule();
+  </script>
+</body>
+</html>

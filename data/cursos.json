@@ -16,9 +16,9 @@
   "fechaISO": "2025-08-01",
   "fechaTexto": "Primavera 2026",
   "tipoEtiqueta": "Curso",
-  "botonTexto": "Próximamente",
-  "url": "",
-  "habilitado": false
+  "botonTexto": "Leer mas",
+  "url": "curso-sistemas-ciberfisicos.html",
+  "habilitado": true
   },
   {
   "id": "curso-pensamiento-ingenieria",
