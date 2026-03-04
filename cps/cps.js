@@ -42,7 +42,7 @@ function renderStudents() {
           <span class="student-semester">${project.semester}</span>
           <p class="flex-grow-1">${project.title}</p>
           ${project.enabled
-            ? `<a class="btn btn-primary mt-auto" href="${project.url}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i>${project.buttonText}</a>`
+            ? `<a class="btn btn-danger mt-auto" href="${project.url}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i>${project.buttonText}</a>`
             : `<button class="btn btn-outline-secondary mt-auto" type="button" disabled><i class="bi bi-hourglass-split me-2"></i>${project.buttonText}</button>`}
         </div>
       </div>
@@ -101,7 +101,7 @@ function renderSchedule(filterText = '') {
               </div>
               <p class="session-description">${session.activity}</p>
               ${session.enabled
-                ? `<a class="btn btn-sm btn-primary" href="${session.lessonUrl}" target="_blank" rel="noopener"><i class="bi bi-journal-bookmark me-2"></i>${session.lessonText}</a>`
+                ? `<a class="btn btn-sm btn-danger" href="${session.lessonUrl}" target="_blank" rel="noopener"><i class="bi bi-journal-bookmark me-2"></i>${session.lessonText}</a>`
                 : `<button class="btn btn-sm btn-outline-secondary" type="button" disabled><i class="bi bi-link-45deg me-2"></i>${session.lessonText}</button>`}
             </div>
           </div>

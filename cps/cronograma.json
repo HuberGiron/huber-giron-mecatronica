@@ -11,7 +11,7 @@
         "activity": "Introducción a CPS, benchmark de protocolos y benchmark de dispositivos inteligentes.",
         "lessonUrl": "pdf/cps1.pdf",
         "lessonText": "Lección / tutorial",
-        "enabled": false
+        "enabled": true
       },
       {
         "date": "14 enero",
