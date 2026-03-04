@@ -40,7 +40,7 @@ function renderStudents() {
       <div class="student-card h-100">
         <div class="card-body d-flex flex-column">
           <span class="student-semester">${project.semester}</span>
-          <h4 class="flex-grow-1">${project.title}</h4>
+          <p class="flex-grow-1">${project.title}</p>
           ${project.enabled
             ? `<a class="btn btn-primary mt-auto" href="${project.url}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i>${project.buttonText}</a>`
             : `<button class="btn btn-outline-secondary mt-auto" type="button" disabled><i class="bi bi-hourglass-split me-2"></i>${project.buttonText}</button>`}
