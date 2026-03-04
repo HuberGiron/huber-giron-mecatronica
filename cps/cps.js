@@ -29,7 +29,52 @@ const studentProjects = [
   }
 ];
 
+const DOCENTE_INFO = {
+  nombre: 'Dr. Huber Girón Nieto',
+  foto: '/assets/img/team/huber.jpg',
+  page: 'https://mecatronica-ibero.mx/huber-giron/'
+};
+
+const LESSON_JSON_PATHS = [
+  '../../data/recursos.json',
+  '../data/recursos.json',
+  './data/recursos.json',
+  './recursos.json',
+  '../../recursos.json'
+];
+
 let scheduleWeeks = [];
+
+function escapeHtml(texto = '') {
+  return String(texto)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function sortByDateDesc(items = []) {
+  return [...items].sort((a, b) => new Date(b.fechaISO) - new Date(a.fechaISO));
+}
+
+async function fetchJsonWithFallback(paths = []) {
+  let lastError = null;
+
+  for (const path of paths) {
+    try {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`No se pudo cargar ${path} (${response.status})`);
+      }
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error('No se pudo cargar el archivo JSON.');
+}
 
 function renderStudents() {
   const container = document.getElementById('studentsContainer');
@@ -142,8 +187,89 @@ function initScheduleSearch() {
   });
 }
 
+function buildLessonBadges(categorias = []) {
+  return categorias
+    .map(cat => `<span class="badge bg-primary bg-gradient rounded-pill mb-1">${escapeHtml(cat)}</span>`)
+    .join('');
+}
+
+function buildLessonAction(item) {
+  if (item.habilitado && item.url) {
+    return `<a class="btn btn-danger" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.botonTexto || 'Leer más')}</a>`;
+  }
+
+  return `<button class="btn btn-danger" type="button" disabled>${escapeHtml(item.botonTexto || 'Próximamente')}</button>`;
+}
+
+function buildLessonCard(item) {
+  return `
+    <div class="col-md-6 col-xl-4">
+      <div class="card dynamic-content-card shadow border-0">
+        <div class="dynamic-card-media">
+          <img class="card-img-top" src="${escapeHtml(item.imagen)}" alt="${escapeHtml(item.alt || item.titulo)}">
+        </div>
+        <div class="card-body px-4">
+          <div class="dynamic-card-badges">
+            ${buildLessonBadges(item.categorias)}
+          </div>
+          <h5 class="card-title dynamic-card-title mb-0">${escapeHtml(item.titulo)}</h5>
+          <p class="card-text dynamic-card-text">${escapeHtml(item.descripcion)}</p>
+        </div>
+        <div class="d-grid px-4 dynamic-card-actions">
+          ${buildLessonAction(item)}
+        </div>
+        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+          <div class="d-flex align-items-center">
+            <a href="${escapeHtml(DOCENTE_INFO.page)}"><img class="rounded-circle me-3" src="${escapeHtml(item.avatar || DOCENTE_INFO.foto)}" alt="${escapeHtml(item.autor || DOCENTE_INFO.nombre)}" width="40"></a>
+            <div class="small">
+              <div class="fw-bold">${escapeHtml(item.autor || DOCENTE_INFO.nombre)}</div>
+              <div class="text-muted">${escapeHtml(item.fechaTexto || '')}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderLessons(items = []) {
+  const container = document.getElementById('lessonsContainer');
+  const empty = document.getElementById('lessonsEmpty');
+
+  if (!container || !empty) return;
+
+  if (!items.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    empty.textContent = 'No hay lecciones disponibles en el archivo JSON.';
+    return;
+  }
+
+  empty.style.display = 'none';
+  container.innerHTML = sortByDateDesc(items).map(buildLessonCard).join('');
+}
+
+async function loadLessons() {
+  const loading = document.getElementById('lessonsLoading');
+  const empty = document.getElementById('lessonsEmpty');
+
+  try {
+    const items = await fetchJsonWithFallback(LESSON_JSON_PATHS);
+    if (loading) loading.style.display = 'none';
+    renderLessons(items);
+  } catch (error) {
+    console.error(error);
+    if (loading) loading.style.display = 'none';
+    if (empty) {
+      empty.style.display = 'block';
+      empty.textContent = 'No se pudo cargar recursos.json. Revisa la ruta del archivo JSON dentro de tu sitio.';
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderStudents();
   initScheduleSearch();
   loadSchedule();
+  loadLessons();
 });

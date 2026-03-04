@@ -57,7 +57,7 @@
     "habilitado": true
   },
     {
-    "id": "recurso-plantilla-repo",
+    "id": "recurso-micro",
     "titulo": "Programación de Microcontroladores",
     "descripcion": "Esta guía está pensada para enseñar a programar desde cero tres familias de plataformas: Seeed Studio XIAO RP2040, ESP32 (ESP32-WROOM-32 y Seeed Studio XIAO ESP32S3 Sense) y ATmega328P.",
     "imagen": "assets/xiao.png",
