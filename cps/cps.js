@@ -36,11 +36,7 @@ const DOCENTE_INFO = {
 };
 
 const LESSON_JSON_PATHS = [
-  '../../data/recursos.json',
-  '../data/recursos.json',
-  './data/recursos.json',
-  './recursos.json',
-  '../../recursos.json'
+  'recursos.json'
 ];
 
 let scheduleWeeks = [];
