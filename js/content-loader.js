@@ -1,7 +1,8 @@
 const DOCENTE_INFO = {
   nombre: "Dr. Huber Girón Nieto",
   subtitulo: "Departamento de Estudios en Ingeniería para la Innovación",
-  foto: "/assets/img/team/huber.jpg"
+  foto: "/assets/img/team/huber.jpg",
+  page: "https://mecatronica-ibero.mx/huber-giron/"
 };
 
 const CONTENT_CONFIG = {
@@ -68,7 +69,7 @@ function buildCard(item) {
         </div>
         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
           <div class="d-flex align-items-center">
-            <img class="rounded-circle me-3" src="${escapeHtml(item.avatar || DOCENTE_INFO.foto)}" alt="${escapeHtml(item.autor || DOCENTE_INFO.nombre)}" width="40">
+            <a href=""${escapeHtml(DOCENTE_INFO.page)}""><img class="rounded-circle me-3" src="${escapeHtml(item.avatar || DOCENTE_INFO.foto)}" alt="${escapeHtml(item.autor || DOCENTE_INFO.nombre)}" width="40"></a>
             <div class="small">
               <div class="fw-bold">${escapeHtml(item.autor || DOCENTE_INFO.nombre)}</div>
               <div class="text-muted">${escapeHtml(item.fechaTexto || "")}</div>
