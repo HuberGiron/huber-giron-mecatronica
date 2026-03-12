@@ -17,7 +17,7 @@ const studentProjects = [
     semester: 'Primavera 2026',
     title: 'Renata Darany Badillo Cabrera y Martha Esther Valdes Cruz',
     url: 'https://marthavlds1.github.io/DocumentacionCiberfisicos/Practicas/',
-    buttonText: 'Próximamente',
+    buttonText: 'Abrir portafolio',
     enabled: true
   },
   {
