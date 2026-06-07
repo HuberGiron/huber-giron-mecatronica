@@ -1,174 +1,294 @@
+/* ========================================================================== 
+   Curso CPS · Sistemas Ciberfísicos de Automatización y Laboratorio
+   --------------------------------------------------------------------------
+   Complemento específico para /huber-giron/cps/.
+   Requiere cargar primero /assets/css/ibero-site.css.
+   ========================================================================== */
+
 :root {
-  --ibero-red: #ef4044;
-  --soft-gray: #f6f7f9;
-  --border-soft: #e8eaed;
-  --text-soft: #60656d;
-  --navy-soft: #1f2937;
+  --cps-soft: #f3f3f1;
+  --cps-border: var(--ibero-border);
+  --cps-text: #34373b;
+  --cps-muted: var(--ibero-gray);
 }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background: #ffffff;
-  color: #1f2937;
+.ibero-course-page {
+  background: #fff;
 }
 
-.course-hero {
-  background:
-    linear-gradient(135deg, rgba(31, 41, 55, 0.92), rgba(31, 41, 55, 0.78)),
-    radial-gradient(circle at top left, rgba(239, 64, 68, 0.32), transparent 38%);
-  color: #fff;
-  padding: 4.3rem 0 3.6rem;
+/* --------------------------------------------------------------------------
+   Hero del curso
+   -------------------------------------------------------------------------- */
+.ibero-course-hero {
+  background: #fff;
+  padding-bottom: clamp(2.7rem, 4.6vw, 4.8rem);
 }
 
-.eyebrow {
-  letter-spacing: 0.08em;
+.ibero-course-hero .ibero-breadcrumbs {
+  margin-bottom: clamp(2.7rem, 4vw, 4.7rem);
+}
+
+.ibero-course-hero .ibero-internal-title {
+  max-width: 980px;
+}
+
+.course-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: 1.8rem;
+}
+
+.course-chip,
+.course-badge,
+.student-semester,
+.meta-chip,
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+  border-radius: 999px;
+  border: 1px solid rgba(224, 0, 52, .16);
+  background: rgba(224, 0, 52, .08);
+  color: var(--ibero-red);
+  padding: .42rem .72rem;
+  font-size: .78rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: .04em;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.85);
 }
 
-.hero-title {
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.08;
-  font-weight: 700;
-  margin-bottom: 0.9rem;
+.course-quick-card {
+  border: 1px solid var(--ibero-border);
+  background: var(--ibero-soft);
+  padding: clamp(1.35rem, 2.5vw, 2rem);
 }
 
-.hero-text {
-  font-size: 1.14rem;
-  color: rgba(255, 255, 255, 0.84);
-  max-width: 850px;
+.course-quick-card .btn {
+  justify-content: center;
+}
+
+.course-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+
+/* --------------------------------------------------------------------------
+   Secciones y tarjetas editoriales
+   -------------------------------------------------------------------------- */
+.course-summary-section,
+.course-section {
+  padding: clamp(3.1rem, 5vw, 5.4rem) 0;
+}
+
+.course-summary-section {
+  background: var(--ibero-soft);
+}
+
+.course-section.is-soft {
+  background: var(--ibero-soft);
+}
+
+.course-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: clamp(1.6rem, 3vw, 2.7rem);
+}
+
+.course-section-head .section-title {
   margin-bottom: 0;
 }
 
-.hero-chip,
-.meta-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.11);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  margin: 0.2rem 0.35rem 0.2rem 0;
+.course-section-head p {
+  max-width: 560px;
+  margin: 0;
+  color: var(--cps-text);
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 
-.section-title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
+.section-title,
+.ibero-course-page .section-title {
+  margin: 0 0 .75rem;
+  color: var(--ibero-black);
+  font-family: var(--ibero-serif);
+  font-size: clamp(2.25rem, 4vw, 4.45rem);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.04em;
 }
 
 .section-subtitle {
-  color: var(--text-soft);
-  font-size: 1.05rem;
-  margin-bottom: 0;
+  color: var(--cps-text);
+  font-size: clamp(1.03rem, 1.2vw, 1.18rem);
+  line-height: 1.55;
 }
 
+.summary-card,
 .info-card,
-.student-card,
-.summary-card,
-.schedule-card,
 .book-card,
-.week-card {
-  background: #fff;
-  border: 1px solid var(--border-soft);
-  border-radius: 1.15rem;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+.schedule-card,
+.week-card,
+.student-card,
+.dynamic-content-card {
   height: 100%;
+  background: #fff;
+  border: 1px solid var(--ibero-border);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .summary-card,
 .schedule-card,
 .week-card {
-  padding: 1.35rem;
+  padding: clamp(1.5rem, 2.6vw, 2.35rem);
 }
 
 .info-card .card-body,
 .student-card .card-body,
 .book-card .card-body {
-  padding: 1.25rem;
+  padding: clamp(1.35rem, 2.2vw, 2rem);
 }
 
-.metric-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--ibero-red);
-  line-height: 1;
+.accent-box {
+  background: #fafafa;
+  border: 1px solid var(--ibero-border);
+  padding: clamp(1.1rem, 1.9vw, 1.5rem);
 }
 
-.metric-label {
-  color: var(--text-soft);
-  font-size: 0.95rem;
-  margin-bottom: 0;
+.mini-title,
+.book-card h3,
+.student-card h3,
+.week-title,
+.session-title {
+  color: var(--ibero-black);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .mini-title {
+  margin-bottom: .72rem;
   font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.65rem;
-  color: var(--navy-soft);
 }
 
 .soft-list {
   margin: 0;
   padding-left: 1.05rem;
-  color: var(--text-soft);
+  color: var(--cps-text);
+  line-height: 1.52;
 }
 
 .soft-list li + li {
-  margin-top: 0.38rem;
+  margin-top: .45rem;
 }
 
-.accent-box {
-  background: var(--soft-gray);
-  border: 1px solid var(--border-soft);
-  border-radius: 1rem;
-  padding: 1rem 1.05rem;
+.metric-number {
+  color: var(--ibero-red);
+  font-family: var(--ibero-serif);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.04em;
 }
 
+.metric-label {
+  margin: .4rem 0 0;
+  color: var(--ibero-gray);
+  font-size: .92rem;
+  font-weight: 700;
+}
+
+.book-card h3 {
+  margin: 0 0 .75rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-family: var(--ibero-serif);
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+.book-card h3 i {
+  color: var(--ibero-red);
+}
+
+.book-card p,
+.info-card p,
+.summary-card p {
+  color: var(--cps-text);
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   Proyectos de alumnos
+   -------------------------------------------------------------------------- */
 .student-card {
-  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  transition: border-color .18s ease, transform .18s ease;
+}
+
+.student-card:hover {
+  border-color: var(--ibero-red);
+  transform: translateY(-2px);
 }
 
 .student-card .card-body {
-  min-height: 210px;
-}
-
-.student-semester {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  background: rgba(239, 64, 68, 0.1);
-  color: #b42326;
-  font-weight: 700;
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
 }
 
 .student-card h3 {
-  font-size: 1.18rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 1.1rem;
+  margin: 0 0 .9rem;
+  font-family: var(--ibero-serif);
+  font-size: clamp(1.55rem, 2.25vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: -.03em;
 }
 
+.student-card p {
+  color: var(--cps-text);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   Cronograma
+   -------------------------------------------------------------------------- */
 .schedule-toolbar {
   display: flex;
-  gap: 0.85rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.15rem;
+  gap: .9rem;
+  margin-bottom: 1.4rem;
 }
 
 .schedule-search {
-  max-width: 380px;
-  width: 100%;
+  width: min(100%, 460px);
+}
+
+.schedule-search .form-control {
+  border-radius: 0;
+  border-color: var(--ibero-border);
+  box-shadow: none;
+  font-size: 1rem;
+}
+
+.schedule-search .form-control:focus {
+  border-color: var(--ibero-red);
+  box-shadow: 0 0 0 .18rem rgba(224, 0, 52, .12);
+}
+
+.schedule-empty {
+  display: none;
+  padding: 1rem 1.15rem;
+  border: 1px dashed var(--ibero-border);
+  color: var(--ibero-gray);
+  background: #fafafa;
 }
 
 .week-card + .week-card {
@@ -178,137 +298,132 @@ body {
 .week-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
   align-items: center;
   justify-content: space-between;
+  gap: .85rem;
   margin-bottom: 1rem;
 }
 
 .week-title-wrap {
   display: flex;
-  gap: 0.8rem;
   align-items: center;
+  gap: .8rem;
   min-width: 0;
 }
 
 .week-index {
   display: inline-flex;
-  width: 2.2rem;
-  height: 2.2rem;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  background: rgba(239, 64, 68, 0.12);
-  color: #b42326;
-  font-size: 0.95rem;
-  font-weight: 700;
+  width: 2.25rem;
+  height: 2.25rem;
   flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgba(224, 0, 52, .08);
+  color: var(--ibero-red);
+  font-size: .92rem;
+  font-weight: 800;
 }
 
 .week-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.2;
   margin: 0;
+  font-size: clamp(1.15rem, 1.55vw, 1.35rem);
 }
 
 .week-range {
-  color: var(--text-soft);
-  font-size: 0.95rem;
-  font-weight: 600;
+  color: var(--ibero-gray);
+  font-size: .95rem;
+  font-weight: 700;
 }
 
 .session-item {
-  border: 1px solid var(--border-soft);
-  border-radius: 0.95rem;
-  padding: 0.95rem;
-  background: #fbfbfc;
   height: 100%;
+  border: 1px solid var(--ibero-border);
+  background: #fafafa;
+  padding: 1rem;
 }
 
 .session-date {
-  font-size: 0.9rem;
-  font-weight: 700;
+  margin-bottom: .35rem;
   color: var(--ibero-red);
-  margin-bottom: 0.35rem;
+  font-size: .9rem;
+  font-weight: 800;
 }
 
 .session-title {
+  margin-bottom: .4rem;
   font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.35rem;
 }
 
 .session-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-bottom: 0.55rem;
+  gap: .35rem;
+  margin-bottom: .6rem;
 }
 
-.session-meta .badge {
-  font-weight: 600;
+.session-meta .badge,
+.ibero-course-page .badge.bg-primary,
+.ibero-course-page .badge.bg-primary.bg-gradient,
+.ibero-course-page .badge.bg-danger,
+.ibero-course-page .badge.bg-danger.bg-gradient {
+  border-radius: 999px !important;
+  background: rgba(224, 0, 52, .08) !important;
+  color: var(--ibero-red) !important;
+  border: 1px solid rgba(224, 0, 52, .16);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-transform: uppercase;
 }
 
 .session-description {
-  color: var(--text-soft);
-  margin-bottom: 0.85rem;
-  line-height: 1.4;
-  min-height: 4.4rem;
+  margin-bottom: .85rem;
+  color: var(--cps-text);
+  line-height: 1.45;
 }
 
-.schedule-empty {
-  display: none;
-  padding: 1rem 1.15rem;
-  border: 1px dashed #c7ccd4;
-  border-radius: 1rem;
-  color: var(--text-soft);
-  background: #fafafa;
+.session-item .btn,
+.week-card .btn,
+.student-card .btn,
+.dynamic-content-card .btn {
+  border-radius: 999px;
+  font-weight: 800;
 }
 
-.book-card h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 0.55rem;
+.ibero-course-page .btn-primary,
+.ibero-course-page .btn-outline-primary:hover,
+.ibero-course-page .btn-outline-primary:focus {
+  background: var(--ibero-red) !important;
+  border-color: var(--ibero-red) !important;
+  color: #fff !important;
 }
 
-.book-card p {
-  color: var(--text-soft);
-  margin-bottom: 0;
+.ibero-course-page .btn-outline-primary,
+.ibero-course-page .text-primary {
+  color: var(--ibero-red) !important;
+  border-color: var(--ibero-red) !important;
 }
 
-@media (max-width: 991.98px) {
-  .course-hero {
-    padding: 3.4rem 0 2.9rem;
-  }
-
-  .schedule-toolbar {
-    align-items: stretch;
-  }
-
-  .schedule-search {
-    max-width: none;
-  }
-
-  .week-header {
-    align-items: flex-start;
-  }
-}
-
-
-
+/* --------------------------------------------------------------------------
+   Lecciones y tarjetas dinámicas generadas por cps.js
+   -------------------------------------------------------------------------- */
 .dynamic-content-card {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  transition: border-color .18s ease, transform .18s ease;
+}
+
+.dynamic-content-card:hover {
+  border-color: var(--ibero-red);
+  transform: translateY(-2px);
 }
 
 .dynamic-card-media {
-  height: 176px;
+  height: 190px;
   overflow: hidden;
   background: #f4f4f4;
-  border-top-left-radius: 1.15rem;
-  border-top-right-radius: 1.15rem;
 }
 
 .dynamic-card-media img {
@@ -322,77 +437,218 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  min-height: 260px;
-  padding-top: 1.15rem;
-  padding-bottom: 0.55rem;
+  min-height: 0;
+  padding: 1.35rem 1.35rem 1rem;
 }
 
 .dynamic-card-badges {
-  min-height: 2.45rem;
-  max-height: 2.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: .38rem .42rem;
+  max-height: 4.35rem;
   overflow: hidden;
-  margin-bottom: 0.1rem;
+  margin: 0 0 1rem;
 }
 
 .dynamic-card-badges .badge {
-  margin-bottom: 0.15rem !important;
+  margin: 0 !important;
+  padding: .34rem .58rem;
+  max-width: 100%;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
-.dynamic-card-title {
-  min-height: 4.05rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.22rem;
-  font-size: 1.02rem;
-  font-weight: 700;
+.dynamic-card-title,
+.dynamic-content-card .card-title {
+  min-height: 0;
+  margin: 0 0 .75rem;
+  color: var(--ibero-black);
+  font-family: var(--ibero-serif);
+  font-size: clamp(1.28rem, 1.45vw, 1.62rem);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -.025em;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.35rem;
 }
 
-.dynamic-card-text {
-  min-height: 6.6rem;
+.dynamic-card-text,
+.dynamic-content-card .card-text {
+  min-height: 0;
   margin-bottom: 0;
-  font-size: 0.9rem;
+  color: var(--cps-text);
+  font-size: .98rem;
+  line-height: 1.48;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.32rem;
-  color: #5c636a;
   flex-grow: 1;
 }
 
 .dynamic-card-actions {
-  padding-top: 0.6rem !important;
-  padding-bottom: 1rem !important;
+  margin-top: auto;
+  padding-top: 1rem !important;
+  padding-bottom: 1.15rem !important;
 }
 
 .dynamic-content-card .card-footer {
-  min-height: 84px;
+  min-height: 76px;
   display: flex;
   align-items: center;
+  border-top: 1px solid var(--ibero-border);
+  background: #fafafa;
+  padding: .95rem 1.35rem;
 }
 
 .dynamic-content-card .card-footer .small {
-  line-height: 1.2;
+  color: var(--ibero-gray);
+  line-height: 1.25;
 }
 
 @media (max-width: 991.98px) {
+  .course-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  .course-quick-card {
+    margin-top: 0;
+  }
+
+  .schedule-toolbar {
+    align-items: stretch;
+  }
+
+  .schedule-search {
+    width: 100%;
+  }
+
+  .week-header {
+    align-items: flex-start;
+  }
+
   .dynamic-card-media {
     height: 168px;
   }
 
-  .dynamic-content-card .card-body {
-    min-height: auto;
+  .dynamic-card-badges {
+    max-height: none;
+    overflow: visible;
+    margin-bottom: .85rem;
   }
 
-  .dynamic-card-badges,
+  .dynamic-content-card .card-body,
   .dynamic-card-title,
   .dynamic-card-text,
   .dynamic-content-card .card-footer {
-    min-height: auto;
-    max-height: none;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .course-chip,
+  .course-badge,
+  .student-semester,
+  .meta-chip,
+  .hero-chip,
+  .dynamic-card-badges .badge {
+    padding: .34rem .5rem;
+    font-size: .68rem;
+    letter-spacing: .025em;
+  }
+
+  .course-quick-card .btn {
+    width: 100%;
+  }
+
+  .dynamic-card-title,
+  .dynamic-content-card .card-title {
+    font-size: 1.34rem;
+    line-height: 1.15;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ajuste de separación entre cronograma y lecciones
+   --------------------------------------------------------------------------
+   Evita que el contenedor del cronograma herede alturas forzadas y genere un
+   bloque blanco excesivo al final de la sección.
+   -------------------------------------------------------------------------- */
+#cronograma.course-section {
+  padding-bottom: clamp(2rem, 3.5vw, 3.2rem);
+}
+
+#lecciones.course-section {
+  padding-top: clamp(2rem, 3.5vw, 3.2rem);
+}
+
+#cronograma .schedule-card,
+#cronograma .week-card,
+#scheduleContainer {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+#scheduleContainer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#scheduleContainer .week-card:last-child {
+  margin-bottom: 0;
+}
+
+#cronograma .schedule-card {
+  padding-bottom: clamp(1.35rem, 2.3vw, 2.1rem);
+}
+
+#lecciones .course-section-head {
+  margin-bottom: clamp(1.3rem, 2.2vw, 2rem);
+}
+
+/* --------------------------------------------------------------------------
+   Contraste visual entre última sección y footer
+   --------------------------------------------------------------------------
+   El cronograma conserva fondo gris, lecciones queda sobre blanco y el footer
+   mantiene el gris institucional sin línea roja superior.
+   -------------------------------------------------------------------------- */
+#cronograma.course-section {
+  background: var(--ibero-soft);
+}
+
+#lecciones.course-section,
+#lecciones.course-lessons-section {
+  background: #fff;
+  padding-bottom: clamp(4.8rem, 7vw, 7.2rem);
+}
+
+#lecciones .dynamic-content-card {
+  background: #fff;
+  border-color: #dedede;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, .055);
+}
+
+.ibero-course-page .ibero-footer {
+  position: relative;
+  background: var(--ibero-soft);
+  border-top: 1px solid #d9d9d9;
+  padding-top: clamp(4.2rem, 6vw, 5.8rem);
+}
+
+.ibero-course-page .ibero-footer::before {
+  display: none !important;
+  content: none !important;
+}
+
+@media (max-width: 575.98px) {
+  #lecciones.course-section,
+  #lecciones.course-lessons-section {
+    padding-bottom: 4rem;
   }
 }
