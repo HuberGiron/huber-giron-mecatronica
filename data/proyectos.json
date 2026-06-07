@@ -37,6 +37,25 @@
     "url": "https://mecatronica-ibero.mx/stl/",
     "habilitado": true
   },
+    {
+    "id": "sitio-mqtt",
+    "titulo": "Broker MQTT Ibero",
+    "descripcion": "Servicio MQTT para proyectos de robótica, automatización, IoT, sistemas ciberfísicos, interfaces web, agentes LLM y backends de experimentación.",
+    "imagen": "https://mecatronica.ibero.mx/mqtt/assets/mqtt_latency_wss443_20260425_193513.png",
+    "alt": "Boker MQTT",
+    "categorias": [
+      "IOT",
+      "CPS"
+    ],
+    "autor": "Dr. Huber Girón Nieto",
+    "avatar": "/assets/img/team/huber.png",
+    "fechaISO": "2026-06-01",
+    "fechaTexto": "1 de Junio 2026",
+    "tipoEtiqueta": "Proyecto",
+    "botonTexto": "Leer más",
+    "url": "https://mecatronica.ibero.mx/mqtt/",
+    "habilitado": true
+  },
   {
     "id": "proyecto-teachable",
     "titulo": "Plataforma educativa Teachable",
@@ -90,7 +109,7 @@
     "fechaTexto": "2 Junio 2025",
     "tipoEtiqueta": "Proyecto",
     "botonTexto": "Leer más",
-    "url": "https://mecatronica-ibero.mx/control/mqtt-mosquitto/",
+    "url": "https://mecatronica.ibero.mx/control-robot-mqtt/",
     "habilitado": true
   },
     {
