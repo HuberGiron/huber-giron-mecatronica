@@ -17,7 +17,7 @@
     window.__PROFILE_CONTENT_LOADER_REQUESTED__ = true;
 
     const script = document.createElement('script');
-    script.src = '/assets/js/profile-content-loader.js?v=2026-06-07';
+    script.src = '/assets/js/profile-content-loader.js?v=2026-06-17-2';
     script.defer = true;
     script.onerror = function () {
       console.error('No se pudo cargar /assets/js/profile-content-loader.js. Verifica que el archivo exista en mecatronica-v2/assets/js/.');
