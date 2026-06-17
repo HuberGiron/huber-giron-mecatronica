@@ -6,7 +6,7 @@
 
   window.PROFILE_CONFIG = Object.assign({
     personaId: 'huber-giron',
-    dataBaseUrl: './data',
+    dataBaseUrl: '/data',
     detalleBaseUrl: '/academia/detalle.html',
     listingPage: 'mas-contenido.html',
     homeLimit: 3
