@@ -144,6 +144,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="/assets/js/site-config.js"></script>
   <script src="/assets/js/ibero-navbar.js"></script>
+  <script src="js/profile-config.js"></script>
   <script src="js/content-loader.js"></script>
 
   <script>
@@ -208,7 +209,7 @@
 
         const existingInstitutionalHead = hostSection.querySelector('.ibero-profile-section-head');
         if (existingInstitutionalHead) {
-          existingInstitutionalHead.classList.add('ibero-profile-listing-head');
+          existingInstitutionalHead.replaceWith(buildHeading(config));
           hostSection.dataset.listingHeadNormalized = 'true';
           return;
         }

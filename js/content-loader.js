@@ -5,7 +5,7 @@
   'use strict';
 
   window.PROFILE_CONFIG = Object.assign({
-    personaId: 'huber-giron',
+    personaId: '',
     dataBaseUrl: '/data',
     detalleBaseUrl: '/academia/detalle.html',
     listingPage: 'mas-contenido.html',
@@ -17,7 +17,7 @@
     window.__PROFILE_CONTENT_LOADER_REQUESTED__ = true;
 
     const script = document.createElement('script');
-    script.src = '/assets/js/profile-content-loader.js?v=2026-06-17-2';
+    script.src = '/assets/js/profile-content-loader.js?v=2026-06-17-3';
     script.defer = true;
     script.onerror = function () {
       console.error('No se pudo cargar /assets/js/profile-content-loader.js. Verifica que el archivo exista en mecatronica-v2/assets/js/.');
